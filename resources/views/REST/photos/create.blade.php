@@ -2,7 +2,7 @@
 
 @extends('layouts.lte')
 @section('title')
-    Demo page | Adding new photo
+    Adding new photo
 @stop
 
 @section('content')

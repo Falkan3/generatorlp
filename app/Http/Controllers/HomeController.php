@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Photo;
 use App\Http\Controllers\PhotoController;
+use Carbon\Carbon;
+use Auth;
+use App\Photo;
+use App\Page;
 
 class HomeController extends Controller
 {
@@ -30,7 +33,15 @@ class HomeController extends Controller
         else
             $offset = $request->offset;
         $photos = app('App\Http\Controllers\PhotoController')->index($offset);
-        return view('lte.demo', ['photos' => $photos]);
+
+        $one_week_ago = Carbon::now()->subWeeks(1);
+        $lastweek = Photo::where('user_id', Auth::user()->id)->withTrashed()->where('created_at', '>=', $one_week_ago)->count();
+
+        $photocount = Photo::all()->count();
+
+        $pages = Page::all();
+
+        return view('lte.demo', ['photos' => $photos, 'lastweek' => $lastweek, 'photocount' => $photocount, 'pages' => $pages]);
     }
 
     public function PreviousPhoto(Request $request)
@@ -43,7 +54,15 @@ class HomeController extends Controller
         }
         else
             $photos = app('App\Http\Controllers\PhotoController')->index();
-        return view('lte.demo', ['photos' => $photos]);
+
+        $one_week_ago = Carbon::now()->subWeeks(1);
+        $lastweek = Photo::where('user_id', Auth::user()->id)->withTrashed()->where('created_at', '>=', $one_week_ago)->count();
+
+        $photocount = Photo::all()->count();
+
+        $pages = Page::all();
+
+        return view('lte.demo', ['photos' => $photos, 'lastweek' => $lastweek, 'photocount' => $photocount, 'pages' => $pages]);
     }
 
     public function NextPhoto(Request $request)
@@ -51,6 +70,14 @@ class HomeController extends Controller
         $offset = $request->input('offset');
 
         $photos = app('App\Http\Controllers\PhotoController')->index($offset);
-        return view('lte.demo', ['photos' => $photos]);
+
+        $one_week_ago = Carbon::now()->subWeeks(1);
+        $lastweek = Photo::where('user_id', Auth::user()->id)->withTrashed()->where('created_at', '>=', $one_week_ago)->count();
+
+        $photocount = Photo::all()->count();
+
+        $pages = Page::all();
+
+        return view('lte.demo', ['photos' => $photos, 'lastweek' => $lastweek, 'photocount' => $photocount, 'pages' => $pages]);
     }
 }

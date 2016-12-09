@@ -2,7 +2,7 @@
 
 @extends('layouts.lte')
 @section('title')
-    Editing photo
+    Editing page
 @stop
 
 @section('content')
@@ -28,7 +28,7 @@
                 <div class="col-md-12">
                     <div class="box">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Editing photo</h3>
+                            <h3 class="box-title">Editing page</h3>
 
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
@@ -42,61 +42,51 @@
 
                         <div class="box-body">
                             <div class="row">
-                                <div class="col-md-12">
-                                    <img
-                                            src="{{URL::asset($photo['attributes']['location'])}}"
-                                            alt="{{$photo['attributes']['title']}}" class="center-block"/>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="box-body">
-                            <div class="row">
-                                {!! Form::open(['route' => array('photo.update', $photo['attributes']['id']), 'files' => true, 'method' => 'PUT']) !!}
-                                {{Form::hidden('user_id', Auth::user()->id)}}
+                                {!! Form::open(['route' => array('page.update', $page['attributes']['id']), 'files' => true, 'method' => 'PUT']) !!}
 
                                 <div class="col-md-12">
                                     <div class="col-md-2">
-                                        {{Form::label('image', 'Photo file')}}
+                                        {{Form::label('name', 'Page description')}}
                                     </div>
                                     <div class="col-md-10">
-                                        {{Form::file('image')}}
-                                    </div>
-                                </div>
-
-
-                                <div class="col-md-12">
-                                    <div class="col-md-2">
-                                        {{Form::label('title', 'Photo title')}}
-                                    </div>
-                                    <div class="col-md-10">
-                                        {{Form::text('title', $photo['attributes']["title"], ['class' => "form-control", 'placeholder' => 'Title of your photo'])}}
-                                    </div>
-                                </div>
-
-
-                                <div class="col-md-12">
-                                    <div class="col-md-2">
-                                        {{Form::label('comment', 'Photo comment')}}
-                                    </div>
-                                    <div class="col-md-10">
-                                        {{Form::textarea('comment', $photo['attributes']["comment"], ['class' => "form-control", 'placeholder' => 'Brief comment'])}}
+                                        {{Form::text('name', $page['attributes']["name"], ['class' => "form-control", 'placeholder' => 'Name of your page'])}}
                                     </div>
                                 </div>
 
                                 <div class="col-md-12">
                                     <div class="col-md-2">
-                                        {{Form::label('public', 'Make your photo public?')}}
+                                        {{Form::label('description', 'Page description')}}
                                     </div>
                                     <div class="col-md-10">
-                                        {{Form::checkbox('public', $photo['attributes']["public"], $photo['attributes']["public"])}}
+                                        {{Form::textarea('description', $page['attributes']["description"], ['class' => "form-control", 'placeholder' => 'Brief page description'])}}
                                     </div>
                                 </div>
 
+                                <div class="col-md-12">
+                                    <div class="col-md-2">
+                                        {{Form::label('layout', 'Page layout')}}
+                                    </div>
+                                    <div class="col-md-10">
 
+                                        <select class="form-control" name="layout">
+                                            @foreach($layouts as $key=>$layout)
+                                                <option value="{{$key}}">{{$layout}}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="col-md-2">
+                                        {{Form::label('online', 'Make your page online?')}}
+                                    </div>
+                                    <div class="col-md-10">
+                                        {{Form::checkbox('online', $page['attributes']["online"], $page['attributes']["online"])}}
+                                    </div>
+                                </div>
 
                                 <div class="pull-right">
-                                    {{Form::submit('Upload', ['class' => "btn btn-primary btn-sm btn-flat", 'style' => "margin: 15px;"])}}
+                                    {{Form::submit('Apply', ['class' => "btn btn-primary btn-sm btn-flat", 'style' => "margin: 15px;"])}}
                                 </div>
 
 

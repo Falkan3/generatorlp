@@ -2,7 +2,7 @@
 
 @extends('layouts.lte')
 @section('title')
-    Viewing photo
+    Viewing page
 @stop
 
 @section('content')
@@ -28,7 +28,7 @@
                 <div class="col-md-12">
                     <div class="box">
                         <div class="box-header with-border">
-                            <h3 class="box-title">{{$photo[0]['title']}}</h3>
+                            <h3 class="box-title">{{$page['name']}}</h3>
 
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
@@ -39,14 +39,14 @@
                                             data-toggle="dropdown">
                                         <i class="fa fa-wrench"></i></button>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="{{route('photo.edit', $photo[0]['id'])}}">Edit photo</a></li>
-                                        <li><a href="{{ url('/photo') . "/" . $photo[0]['id'] }}"
+                                        <li><a href="{{ route('page.edit', $page['id'])}}">Edit page</a></li>
+                                        <li><a href="{{ route('page.show', $page['id']) }}"
                                            onclick="event.preventDefault();
                                                      document.getElementById('destroy-form').submit();">
-                                            Remove photo
+                                            Remove page
                                         </a></li>
 
-                                        {{ Form::open(array('id' => 'destroy-form', 'route' => array('photo.destroy', $photo[0]['id']), 'method' => 'delete')) }}
+                                        {{ Form::open(array('id' => 'destroy-form', 'route' => array('page.destroy', $page['id']), 'method' => 'delete')) }}
                                         {{ Form::close() }}
                                     </ul>
                                 </div>
@@ -58,9 +58,10 @@
                         <div class="box-body">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <img
-                                            src="{{URL::asset($photo[0]['attributes']['location'])}}"
-                                            alt="{{$photo[0]['title']}}" class="center-block"/>
+                                    <p>Elements on page: 0</p>
+                                    <p>Page layout: {{$page['layout']}}. {{$page->getLayout['attributes']['name']}}</p>
+                                    <p>Created at: {{$page['created_at']}}</p>
+                                    <p>Last updated at: {{$page['updated_at']}}</p>
                                 </div>
                             </div>
                         </div>
@@ -68,9 +69,16 @@
                     </div>
                     <!-- ./box-body -->
                     <div class="box-footer">
+
+                        <div class="box-header">
+                            <i class="fa fa-comments-o"></i>
+
+                            <h3 class="box-title">Description</h3>
+                        </div>
+
                         <div class="row">
                             <div class="col-md-12">
-                                <p>{{$photo[0]['comment']}}</p>
+                                <p>{{$page['description']}}</p>
                             </div>
                         </div>
                         <!-- /.row -->

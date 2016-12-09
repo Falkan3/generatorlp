@@ -1,10 +1,10 @@
 <header class="main-header">
     <!-- Logo -->
-    <a href="<?php if(Auth::check()){url('home');} else {url('/');} ?>" class="logo">
+    <a href="{{url('/home')}}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>SysR</b></span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Sys. rozproszone</b> REST</span>
+        <span class="logo-lg"><b>LP Generator</b></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">

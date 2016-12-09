@@ -15,14 +15,23 @@ Route::get('/', 'MainController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::group(['prefix' => 'home'], function () {
+    Route::get('/', 'HomeController@index');
+    Route::get('/previous', 'HomeController@PreviousPhoto');
+    Route::get('/next', 'HomeController@NextPhoto');
+});
+
 Route::group(['middleware' => ['web', 'auth']], function () {
     Route::resource('/photo', 'PhotoController');
 
     Route::group(['prefix' => 'photo'], function () {
 
     });
+
+    Route::resource('/page', 'PageController');
 });
 
-Route::get('/previous', 'HomeController@PreviousPhoto');
-Route::get('/next', 'HomeController@NextPhoto');
+Route::group(['middleware' => ['web']], function () {
+    Route::get('p/{id}', 'MainController@ViewPage');
+});
+

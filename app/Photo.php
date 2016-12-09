@@ -13,5 +13,10 @@ class Photo extends Model
         return $this->belongsTo('App\User', 'user_id');
     }
 
+    public function photo_locales()
+    {
+        return $this->hasMany('App\PhotoLocale', 'photo_id');
+    }
+
     protected $dates = ['deleted_at'];
 }

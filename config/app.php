@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Systemy rozproszone - REST',
+    'name' => 'LP Generator',
 
     /*
     |--------------------------------------------------------------------------
@@ -77,7 +77,8 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'pl',
+    'locales' => ['en' => 'English', 'pl' => 'Polski'],
 
     /*
     |--------------------------------------------------------------------------

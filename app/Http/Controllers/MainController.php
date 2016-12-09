@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Photo;
+use App\Page;
 
 class MainController extends Controller
 {
@@ -17,13 +17,15 @@ class MainController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
-        if(!isset($request->offset))
-            $offset = 0;
-        else
-            $offset = $request->offset;
-        $photos = Photo::where('public', 0)->offset($offset)->limit(6)->get();
-        return view('lte.demo', ['photos' => $photos]);
+        $page = Page::findOrFail(1);
+        return view('pages.main', ['layout' => $page->getLayout->location]);
+    }
+
+    public function ViewPage($id)
+    {
+        $page = Page::findOrFail($id);
+        return view($page->location, ['layout' => $page->getLayout->location]);
     }
 }

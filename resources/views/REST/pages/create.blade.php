@@ -2,7 +2,7 @@
 
 @extends('layouts.lte')
 @section('title')
-    Viewing photo
+    Adding new page
 @stop
 
 @section('content')
@@ -28,28 +28,12 @@
                 <div class="col-md-12">
                     <div class="box">
                         <div class="box-header with-border">
-                            <h3 class="box-title">{{$photo[0]['title']}}</h3>
+                            <h3 class="box-title">Adding new page</h3>
 
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
                                             class="fa fa-minus"></i>
                                 </button>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-box-tool dropdown-toggle"
-                                            data-toggle="dropdown">
-                                        <i class="fa fa-wrench"></i></button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="{{route('photo.edit', $photo[0]['id'])}}">Edit photo</a></li>
-                                        <li><a href="{{ url('/photo') . "/" . $photo[0]['id'] }}"
-                                           onclick="event.preventDefault();
-                                                     document.getElementById('destroy-form').submit();">
-                                            Remove photo
-                                        </a></li>
-
-                                        {{ Form::open(array('id' => 'destroy-form', 'route' => array('photo.destroy', $photo[0]['id']), 'method' => 'delete')) }}
-                                        {{ Form::close() }}
-                                    </ul>
-                                </div>
                                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i
                                             class="fa fa-times"></i></button>
                             </div>
@@ -57,11 +41,43 @@
                         <!-- /.box-header -->
                         <div class="box-body">
                             <div class="row">
+                                {!! Form::open(['route' => array('page.store')]) !!}
+
                                 <div class="col-md-12">
-                                    <img
-                                            src="{{URL::asset($photo[0]['attributes']['location'])}}"
-                                            alt="{{$photo[0]['title']}}" class="center-block"/>
+                                    <div class="col-md-2">
+                                        {{Form::label('name', 'Page name')}}
+                                    </div>
+                                    <div class="col-md-10">
+                                        {{Form::text('name', '', ['class' => "form-control", 'placeholder' => 'Name of your page'])}}
+                                    </div>
                                 </div>
+
+                                <div class="col-md-12">
+                                    <div class="col-md-2">
+                                        {{Form::label('description', 'Page description')}}
+                                    </div>
+                                    <div class="col-md-10">
+                                        {{Form::textarea('description', '', ['class' => "form-control", 'placeholder' => 'Brief page description'])}}
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="col-md-2">
+                                        {{Form::label('online', 'Make your page online?')}}
+                                    </div>
+                                    <div class="col-md-10">
+                                        {{Form::checkbox('online', '1', '1')}}
+                                    </div>
+                                </div>
+
+
+
+                                <div class="pull-right">
+                                    {{Form::submit('Create', ['class' => "btn btn-primary btn-sm btn-flat", 'style' => "margin: 15px;"])}}
+                                </div>
+
+
+                                {!! Form::close() !!}
                             </div>
                         </div>
                         <!-- /.row -->
@@ -69,9 +85,7 @@
                     <!-- ./box-body -->
                     <div class="box-footer">
                         <div class="row">
-                            <div class="col-md-12">
-                                <p>{{$photo[0]['comment']}}</p>
-                            </div>
+
                         </div>
                         <!-- /.row -->
                     </div>
