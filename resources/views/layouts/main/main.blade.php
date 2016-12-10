@@ -8,16 +8,15 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'Xam')</title>
+    <title>@yield('title', 'index')</title>
 
-    @include('lte.includes.head')
-
-    <!-- Styles -->
-        <link href="{{URL::asset('css/bootstrap/bootstrap.min.css')}}" rel="stylesheet">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-        <!-- custom -->
-        <link rel="stylesheet" href="{{URL::asset('css/main_app_style.css')}}">
+<!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="{{URL::asset('css/bootstrap/bootstrap.min.css')}}" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="{{URL::asset('css/main_app_style.css')}}">
     <!-- /Styles -->
 
     <!-- Scripts -->
@@ -27,7 +26,7 @@
         ]); ?>
     </script>
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body>
 <div class="wrapper">
 
     @include('layouts.main.includes.header')
@@ -42,18 +41,18 @@
 
 <!-- Scripts -->
 
-    <!-- jQuery 2.2.3 -->
-    <script src="{{URL::asset('js/plugins/jQuery/jquery-2.2.3.min.js')}}"></script>
-    <!-- jQuery UI 1.11.4 -->
-    <script src="{{URL::asset('js/plugins/jQueryUI/jquery-ui.min.js')}}"></script>
-    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-    <script>
-        $.widget.bridge('uibutton', $.ui.button);
-    </script>
-    <!-- Bootstrap 3.3.6 -->
-    <script src="{{URL::asset('js/bootstrap/bootstrap.min.js')}}"></script>
+<!-- jQuery 2.2.3 -->
+<script src="{{URL::asset('js/plugins/jQuery/jquery-2.2.3.min.js')}}"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="{{URL::asset('js/plugins/jQueryUI/jquery-ui.min.js')}}"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+    $.widget.bridge('uibutton', $.ui.button);
+</script>
+<!-- Bootstrap 3.3.6 -->
+<script src="{{URL::asset('js/bootstrap/bootstrap.min.js')}}"></script>
 
-    <script src="{{URL::asset('js/main_app_js.js')}}"></script>
+<script src="{{URL::asset('js/main_app_js.js')}}"></script>
 
 <!-- /Scripts -->
 

@@ -3,6 +3,7 @@
 .navbar, .navbar li a {
     transition: 1s;
 }
+
 .navbar {
     margin-bottom: 0;
     border: none;
@@ -21,93 +22,237 @@ header nav #logo {
     }
 }
 
-
 /* /Header *************************************************************************/
 
+/* Utilites *************************************************************************/
+
+.padding-small {
+    padding: 15px 8px;
+}
+
+.padding-medium {
+    padding: 30px 15px;
+}
+
+/* /Utilites *************************************************************************/
+
 /* Content *************************************************************************/
+
+body {
+    background: #fff; /*#227ab2;*/
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
 .content {
-    margin-top: 30px;
+    margin: 30px 0;
 }
 
 /* Tiles *************************************************************************/
 
-.dynamicTile .col-sm-2.col-xs-4{
-    padding:5px;
+.dynamicTile .col {
+    padding: 5px;
 }
 
-.dynamicTile .col-sm-4.col-xs-8{
-    padding:5px;
+#tile1 {
+    background: rgb(0, 172, 238);
 }
 
-.dynamicTile .col-sm-4.col-xs-12{
-    padding:5px;
+#tile2 {
+    background: rgb(243, 243, 243);
 }
 
-#tile1{
-    background: rgb(0,172,238);
+#tile3 {
+    background: rgb(71, 193, 228);
 }
 
-#tile2{
-    background: rgb(243,243,243);
-}
-
-#tile3{
-    background: rgb(71,193,228);
-}
-
-#tile4{
+#tile4 {
     background-image: url('http://handsontek.net/demoimages/tiles/facebook.png');
     background-size: cover;
 }
 
-#tile5{
-    background: rgb(175,26,63);
+#tile5 {
+    background: rgb(175, 26, 63);
 }
 
-#tile6{
-    background: rgb(62,157,215);
+#tile6 {
+    background: rgb(62, 157, 215);
 }
 
-#tile7{
+#tile7 {
     background: white;
 }
 
-#tile8{
-    background: rgb(209,70,37);
+#tile8 {
+    background: rgb(209, 70, 37);
 }
 
-#tile9{
-    background: rgb(0,142,0);
+#tile9 {
+    background: rgb(0, 142, 0);
 }
 
-#tile10{
-    background: rgb(0,93,233);
+#tile10 {
+    background: rgb(0, 93, 233);
 }
 
-.tilecaption{
+.tilecaption {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    margin:0!important;
+    height: 0;
+    top: 35%;
+    transform: translateY(-35%);
+    -webkit-transform: translateY(-35%);
+    -ms-transform: translateY(-35%);
+    margin: 0 !important;
     text-align: center;
-    color:white;
-    font-family: Segoe UI;
+    color: white;
+    /*font-family: Segoe UI;*/
     font-weight: lighter;
 }
 
 .tile .item img {
     height: 100%;
+    width: 100%;
 }
 
 .tile, .carousel, .carousel-inner, .carousel .item {
     height: 100%;
 }
 
+.tile .slide-badge {
+    position: absolute;
+    padding: 10px 25px;
+    background-color: #ff9c00;
+}
+
+.tile .slide-badge.bottom {
+    background-color: #f00;
+    right: 0;
+    bottom: 0;
+}
+
+.contact-form {
+    min-height: 350px;
+    padding: 5px 0;
+}
+
+.contact-form > div {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-color: #ff9c00;
+    text-align: center;
+}
+
+span.text-bold
+{
+    font-weight: bold;
+}
+
+.contact-form form input[type="text"], .contact-form form input[type="textarea"] {
+    color: #000;
+}
+
+.contact-form-field {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.contact-form ::-webkit-input-placeholder {
+    font-style: italic;
+}
+.contact-form :-moz-placeholder {
+    font-style: italic;
+}
+.contact-form ::-moz-placeholder {
+    font-style: italic;
+}
+.contact-form :-ms-input-placeholder {
+    font-style: italic;
+}
+
+.contact-form .btn {
+    display: block;
+    padding: 15px 30px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+    background-color: #3a3a38;
+    white-space: normal;
+    color: #fff;
+}
+
+.contact-form .btn:hover {
+    background-color: rgb(69, 99, 91);
+}
+
+.col-sm-1.center-block, .col-sm-10.center-block, .col-sm-11.center-block, .col-sm-12.center-block, .col-sm-2.center-block, .col-sm-3.center-block, .col-sm-4.center-block, .col-sm-5.center-block, .col-sm-6.center-block, .col-sm-7.center-block, .col-sm-8.center-block, .col-sm-9.center-block {
+    float: none;
+}
+
+.contact-form a[data-toggle="tooltip"] {
+    text-decoration: none;
+}
+
+.contact-form .tooltip .tooltip-inner {
+    padding: 10px 15px;
+    width: 200px;
+    background-color: #3a3a38 !important;
+}
+
+.contact-form .tooltip .tooltip-arrow {
+    border-left-color: #3a3a38 !important;
+    border-top-color: #3a3a38 !important;
+}
+
+.contact-form .link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+@media (max-width: 1200px) {
+    .contact-form .btn {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 992px) {
+    .dynamicTile .contact-form {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 @media (max-width: 768px) {
-    .dynamicTile div{
-        padding:0;
+
+
+    .dynamicTile .contact-form {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact-form .btn {
+        font-size: 16px;
+        padding: 15px 25px;
     }
 }
 
