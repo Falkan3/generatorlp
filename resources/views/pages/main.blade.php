@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-8 tiles">
                     <div class="col col-sm-6 col-xs-12">
-                        <div id="tile7" class="tile tile-big slow">
+                        <div class="tile tile-big slow">
 
                             <div class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
@@ -42,7 +42,7 @@
                     </div>
 
                     <div class="col col-sm-6 col-xs-12">
-                        <div id="tile9" class="tile tile-big fast">
+                        <div class="tile tile-big fast">
 
                             <div class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
@@ -89,7 +89,7 @@
                     </div>
 
                     <div class="col col-sm-6 col-xs-12">
-                        <div id="tile1" class="tile tile-big">
+                        <div class="tile tile-big">
 
                             <div class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
@@ -117,7 +117,7 @@
                         </div>
                     </div>
                     <div class="col col-sm-6 col-xs-12">
-                        <div id="tile2" class="tile tile-big">
+                        <div class="tile tile-big">
 
                             <div class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
