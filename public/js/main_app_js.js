@@ -8,7 +8,10 @@ $(document).ready(function () {
     $('.tile.tile-small .carousel').carousel({
         interval: 5000
     });
-    $('.tile.tile-big .carousel').carousel({
+    $('.tile.tile-big.fast .carousel').carousel({
+        interval: 10000
+    });
+    $('.tile.tile-big.slow .carousel').carousel({
         interval: 10000
     });
 

@@ -98,23 +98,50 @@ body {
     background: rgb(0, 93, 233);
 }
 
-.tilecaption {
-    position: relative;
-    height: 0;
-    top: 35%;
-    transform: translateY(-35%);
-    -webkit-transform: translateY(-35%);
-    -ms-transform: translateY(-35%);
-    margin: 0 !important;
-    text-align: center;
-    color: white;
-    /*font-family: Segoe UI;*/
-    font-weight: lighter;
-}
-
-.tile .item img {
+.tilecaption-box {
+    position: absolute;
+    display: table !important;
     height: 100%;
     width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.tilecaption {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 7%;
+    margin: 0 !important;
+}
+
+.tilecaption h3 {
+    color: #ff9c00;
+}
+
+.tilecaption a {
+    color: #fefefe;
+    background-color: #ff9c00;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+.tilecaption ul {
+    margin-top: 5%;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.tilecaption ul > li:not(:last-child) {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+.tile .item {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .tile, .carousel, .carousel-inner, .carousel .item {
@@ -125,6 +152,17 @@ body {
     position: absolute;
     padding: 10px 25px;
     background-color: #ff9c00;
+    z-index: 1;
+}
+
+.tile img.slide-logo {
+    position: absolute;
+    right:0;
+    max-width: 35%;
+    max-height: 15%;
+    z-index: 1;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 .tile .slide-badge.bottom {
@@ -227,6 +265,15 @@ span.text-bold
     color: #fff;
     text-decoration: none;
     font-size: 11px;
+}
+
+div.b-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 0;
 }
 
 @media (max-width: 1200px) {
