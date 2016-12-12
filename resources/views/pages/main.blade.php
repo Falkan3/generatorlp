@@ -17,6 +17,7 @@
                                     <div class="item active"
                                          style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
                                         <div class="slide-badge">Wyróżnione</div>
+                                        <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a></div>
                                         <img class="slide-logo" src="http://bosque-creative.pl/projekty/demo4/wp-content/uploads/2015/11/logo-www.png" />
                                         <div class="tilecaption-box">
                                             <div class="tilecaption">
@@ -49,6 +50,7 @@
                                     <div class="item active"
                                          style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide2.jpg')">
                                         <div class="slide-badge">Wyróżnione</div>
+                                        <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a></div>
                                         <div class="tilecaption-box">
                                             <div class="tilecaption">
                                                 <h3>Biuro Usł. Rach.-Audyt. Grażyna Łukjanow</h3>
@@ -65,6 +67,7 @@
                                     <div class="item"
                                          style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide5.jpg')">
                                         <div class="slide-badge">Wyróżnione</div>
+                                        <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a></div>
                                         <img class="slide-logo" src="http://www.phuas.pl/uploads/9/0/1/5/90154401/logo-2.jpg" />
                                         <div class="tilecaption-box">
                                             <div class="tilecaption">
@@ -94,6 +97,7 @@
                                     <div class="item active"
                                          style="background-image: url('http://www.phuas.pl/uploads/9/0/1/5/90154401/7_1.jpg')">
                                         <div class="tilecaption-box">
+                                            <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a></div>
                                             <img class="slide-logo" src="{{asset('user_photos/admin/Photos/8a334804169251031d227794d07f72ae.png')}}" />
                                             <div class="tilecaption">
                                                 <h3>Pomorskie Biuro Rachunkowe Sp. z o.o.</h3>
@@ -120,6 +124,7 @@
                                 <div class="carousel-inner">
                                     <div class="item active"
                                          style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide3.jpg')">
+                                        <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a></div>
                                         <div class="tilecaption-box">
                                             <img class="slide-logo" src="http://virtus-gdansk.pl/images/header_decorator.jpg" />
                                             <div class="tilecaption">
@@ -136,6 +141,7 @@
                                     </div>
                                     <div class="item"
                                          style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide6.jpg')">
+                                        <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a></div>
                                         <div class="tilecaption-box">
                                             <div class="tilecaption">
                                                 <h3>Anita Podgórska Biuro Rachunkowe</h3>
@@ -163,7 +169,7 @@
                         <h1><span class="text-bold">Wypełnij formularz</span></h1>
 
                         <div class="padding-medium">
-                            {!! Form::open(['url' => '#', 'method' => 'post']) !!}
+                            {!! Form::open(['url' => '#', 'method' => 'post', 'id' => 'contact-form']) !!}
                             <div class="col-sm-10 center-block">
                                 <a href="#" data-toggle="tooltip" data-placement="left"
                                    title="Wpisz poprawne imię">{{Form::text('imie', '', ['class' => "contact-form-field", 'placeholder' => 'Imię'])}}</a>

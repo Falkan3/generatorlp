@@ -52,6 +52,8 @@
 <!-- Bootstrap 3.3.6 -->
 <script src="{{URL::asset('js/bootstrap/bootstrap.min.js')}}"></script>
 
+<script src="{{URL::asset('js/scrolling_nav.js')}}"></script>
+<script src="{{URL::asset('js/contact_form.js')}}"></script>
 <script src="{{URL::asset('js/main_app_js.js')}}"></script>
 
 <!-- /Scripts -->

@@ -124,6 +124,12 @@ body {
     background-color: #ff9c00;
     text-decoration: none;
     padding: 5px 20px;
+    transition: 1s;
+}
+
+.tilecaption a:hover {
+    background-color: #ffc401;
+    color: #000;
 }
 
 .tilecaption ul {
@@ -150,7 +156,7 @@ body {
 
 .tile .slide-badge {
     position: absolute;
-    padding: 10px 25px;
+    padding: 5px 25px;
     background-color: #ff9c00;
     z-index: 1;
 }
@@ -169,6 +175,17 @@ body {
     background-color: #f00;
     right: 0;
     bottom: 0;
+    display: none;
+    z-index: 2;
+}
+
+.tile .slide-badge.bottom:hover {
+    background-color: #ff2f23;
+}
+
+.tile .slide-badge.bottom a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .contact-form {
@@ -210,6 +227,26 @@ span.text-bold
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.contact-form-field.wrong_input {
+    border: 2px solid #880000;
+    background-color: #ffaca5;
+}
+
+.contact-form-field.wrong_input:focus {
+    border: 2px solid #cc1304;
+    outline: none;
+}
+
+.contact-form-field.correct_input {
+    border: 2px solid #067200;
+    background-color: #a7ff89;
+}
+
+.contact-form-field.correct_input:focus {
+    border: 2px solid #07a300;
+    outline: none;
 }
 
 .contact-form ::-webkit-input-placeholder {
@@ -272,8 +309,9 @@ div.b-overlay {
     height: 100%;
     width: 100%;
     bottom: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.9);
     z-index: 0;
+    transition: all .3s ease-in-out;
 }
 
 @media (max-width: 1200px) {
@@ -282,10 +320,14 @@ div.b-overlay {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .dynamicTile .contact-form {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .tile .slide-badge.bottom {
+        display: block;
     }
 }
 
