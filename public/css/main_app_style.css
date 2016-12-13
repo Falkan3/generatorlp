@@ -41,7 +41,7 @@ header nav #logo {
 body {
     background: #fff; /*#227ab2;*/
     font-family: 'Nunito', sans-serif;
-    color: #fff;
+    color: #000;
     font-size: 14px;
     margin: 0;
     padding: 0;
@@ -58,7 +58,11 @@ body {
 }
 
 .tile {
-    background: #000;
+    background: #fff;
+}
+
+.tiles .tile .item {
+    height: 500px;
 }
 
 #tile1 {
@@ -102,6 +106,10 @@ body {
     background: rgb(0, 93, 233);
 }
 
+.tile .item {
+    min-height: 200px;
+}
+
 .tilecaption-box {
     position: absolute;
     display: table !important;
@@ -110,6 +118,18 @@ body {
     text-align: center;
     vertical-align: middle;
     z-index: 1;
+    background-color: #fff;
+    border: solid 2px #ddd;
+    border-top: none;
+}
+
+.tile .tilecaption-box {
+    height: 50%;
+}
+
+.tile .b-overlay {
+    top: 0;
+    height: 50%;
 }
 
 .tilecaption {
@@ -137,7 +157,7 @@ body {
 }
 
 .tilecaption ul {
-    margin-top: 5%;
+    margin-top: 10px;
     list-style: none;
     padding: 0;
     text-align: center;
@@ -145,10 +165,9 @@ body {
 
 .tilecaption ul > li:not(:last-child) {
     margin-bottom: 5px;
-    border-bottom: 1px solid #434343;
 }
 
-.tile .item {
+.tile .item, .tile .item .bg-pic {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,6 +181,7 @@ body {
     position: absolute;
     padding: 5px 25px;
     background-color: #ff9c00;
+    top: 0;
     z-index: 1;
 }
 
@@ -175,8 +195,21 @@ body {
     margin-top: 10px;
 }
 
+.tile .slide-badge.right {
+    background-color: #f00;
+    top: 0;
+    right: 0;
+    display: none;
+    z-index: 2;
+}
+
+.tile .slide-badge.right :hover {
+    background-color: #ff2f23;
+}
+
 .tile .slide-badge.bottom, .tile-description .slide-badge.bottom {
     background-color: #f00;
+    top: auto;
     right: 0;
     bottom: 0;
     display: none;
@@ -184,10 +217,10 @@ body {
 }
 
 .tile .slide-badge.bottom:hover, .tile-description .slide-badge.bottom:hover{
-    background-color: #ff2f23;
+    background-color: #59c8ff;
 }
 
-.tile .slide-badge.bottom a, .tile-description .slide-badge.bottom a {
+.tile .slide-badge.bottom, .tile-description .slide-badge.bottom, .tile .slide-badge.right {
     color: #fff;
     text-decoration: none;
 }
@@ -303,7 +336,7 @@ span.text-bold
 }
 
 .contact-form .link {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 11px;
 }
@@ -318,7 +351,7 @@ div.b-overlay {
     transition: all .3s ease-in-out;
 }
 
-.tile .tilecaption ul, .tile img.slide-logo {
+.tile img.slide-logo {
     display: none;
 }
 
@@ -334,6 +367,10 @@ div.b-overlay {
     font-weight: bold;
 }
 
+.bg-pic {
+    height: 50%;
+}
+
 @media (max-width: 1200px) {
     .contact-form .btn {
         padding: 5px;
@@ -346,7 +383,7 @@ div.b-overlay {
         padding-right: 20px;
     }
 
-    .tile .slide-badge.bottom {
+    .tile .slide-badge.bottom, .tile .slide-badge.right  {
         display: block;
     }
 }

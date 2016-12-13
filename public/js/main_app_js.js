@@ -1,15 +1,14 @@
 var tiles;
+var tiles_sng;
 var tooltips;
 var index=0;
 
 $(document).ready(function () {
     tiles = $('.dynamicTile > .row > .tiles');
+    tiles_sng = $('.dynamicTile > .row > .tiles .tile');
     tile_items = $('.tiles .item');
     descs = $('.tile-description');
     tooltips = $('[data-toggle="tooltip"]');
-    tile_items.each(function(){
-        $(this).attr('id', index++);
-    });
 
     $('.tile.tile-small .carousel').carousel({
         interval: 5000
@@ -21,13 +20,19 @@ $(document).ready(function () {
         interval: 10000
     });
 
-    $(".tile.tile-small").each(function (e) {
-        $(this).height($(this).width() / 2);
+    tile_items.each(function() {
+        $(this).attr('id', index++);
     });
-    $(".tile.tile-big").each(function (e) {
-        $(this).height($(this).width());
-    });
+    resizeTiles();
     if ($(window).width() > 768) {
+        /*
+        $(".tile.tile-small").each(function (e) {
+            $(this).height($(this).width() / 2);
+        });
+        $(".tile.tile-big").each(function (e) {
+            $(this).height($(this).width());
+        });
+        */
         $('.contact-form').css('min-height', tiles.height() - 10);
         $('.contact-form > div').css('min-height', tiles.height() - 10);
         tooltips.attr('data-placement', 'left');
@@ -56,15 +61,19 @@ $(document).ready(function () {
     });
 
     $(window).bind('resizeEnd', function () {
-        $(".tile.tile-small").each(function (e) {
-            $(this).height($(this).width() / 2);
-        });
-        //$(".carousel").height($("#tile1").width());
-        //$(".item").height($("#tile1").width());
-        $(".tile.tile-big").each(function (e) {
-            $(this).height($(this).width());
-        });
+        resizeTiles();
         if ($(window).width() > 768) {
+            /*
+            $(".tile.tile-small").each(function (e) {
+                $(this).height($(this).width() / 2);
+            });
+            //$(".carousel").height($("#tile1").width());
+            //$(".item").height($("#tile1").width());
+            $(".tile.tile-big").each(function (e) {
+                $(this).height($(this).width());
+            });
+            */
+
             $('.contact-form').css('min-height', tiles.height() - 10);
             $('.contact-form > div').css('min-height', tiles.height() - 10);
             tooltips.attr('data-placement', 'left');
@@ -77,6 +86,7 @@ $(document).ready(function () {
 
     //Click tile
     descs.hide();
+    /*
     tile_items.click(function(e) {
         var desc = $(this).closest('section').find('.tile-description');
         if(desc.css('display')=="none" || desc.attr('selected-tile')!=$(this).attr('id'))
@@ -98,5 +108,14 @@ $(document).ready(function () {
         desc.attr('selected-tile', $(this).attr('id'));
 
     });
+    */
 
 });
+
+function resizeTiles() {
+    /*
+    tile_items.each(function(){
+        $(this).height(500);
+    });
+    */
+}

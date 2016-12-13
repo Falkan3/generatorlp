@@ -9,16 +9,17 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-8 tiles">
                     <section>
-                        <div class="col col-sm-6 col-xs-12">
-                            <div class="tile tile-big slow">
+                        <div class="col col-sm-12 col-xs-12">
+                            <div class="tile tile-small slow">
                                 <div class="carousel slide" data-ride="carousel">
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
-                                        <div class="item active"
-                                             style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
-                                            <div class="slide-badge">Wyróżnione</div>
-                                            <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a>
+                                        <div class="item active">
+                                            <div class="bg-pic" style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
+                                                <div class="b-overlay"></div>
                                             </div>
+                                            <div class="slide-badge">Wyróżnione</div>
+                                            <a href=".contact-form" class="page-scroll slide-badge right">Formularz</a>
                                             <img class="slide-logo"
                                                  src="http://bosque-creative.pl/projekty/demo4/wp-content/uploads/2015/11/logo-www.png"/>
                                             <div class="tilecaption-box">
@@ -33,7 +34,6 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="b-overlay"></div>
                                         </div>
 
                                     </div>
@@ -42,53 +42,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-sm-6 col-xs-12">
-                            <div class="tile tile-big fast">
 
-                                <div class="carousel slide" data-ride="carousel">
-                                    <!-- Wrapper for slides -->
-                                    <div class="carousel-inner">
-                                        <div class="item active"
-                                             style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide2.jpg')">
-                                            <div class="slide-badge">Wyróżnione</div>
-                                            <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a>
-                                            </div>
-                                            <div class="tilecaption-box">
-                                                <div class="tilecaption">
-                                                    <h3>Biuro Usł. Rach.-Audyt. Grażyna Łukjanow</h3>
-                                                    <ul>
-                                                        <li>50% zniżki przez pierwsze 3 m-ce</li>
-                                                        <li>gratis prowadzenie kadr przez 6 m-cy (nowi klienci)</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="b-overlay"></div>
-                                        </div>
-
-                                        <div class="item"
-                                             style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide5.jpg')">
-                                            <div class="slide-badge">Wyróżnione</div>
-                                            <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a>
-                                            </div>
-                                            <img class="slide-logo"
-                                                 src="http://www.phuas.pl/uploads/9/0/1/5/90154401/logo-2.jpg"/>
-                                            <div class="tilecaption-box">
-                                                <div class="tilecaption">
-                                                    <h3>Biuro Rachunkowe ABACO</h3>
-                                                    <ul>
-                                                        <li>indywidualne podejście do klienta</li>
-                                                        <li>odbiór dokumentów od klienta</li>
-                                                        <li>wsparcie w strategii podatkowej</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="b-overlay"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
 
                         <div id="test" class="col-sm-12 col-xs-12 tile-description">
 
@@ -102,12 +56,12 @@
                                 <div class="carousel slide" data-ride="carousel">
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
-                                        <div class="item active"
-                                             style="background-image: url('http://www.phuas.pl/uploads/9/0/1/5/90154401/7_1.jpg')">
+                                        <div class="item active">
+                                            <div class="bg-pic" style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
+                                                <div class="b-overlay"></div>
+                                            </div>
+                                            <a href=".contact-form" class="page-scroll slide-badge right">Formularz</a>
                                             <div class="tilecaption-box">
-                                                <div class="slide-badge bottom"><a href=".contact-form"
-                                                                                   class="page-scroll">Formularz</a>
-                                                </div>
                                                 <img class="slide-logo"
                                                      src="{{asset('user_photos/admin/Photos/8a334804169251031d227794d07f72ae.png')}}"/>
                                                 <div class="tilecaption">
@@ -133,10 +87,11 @@
                                 <div class="carousel slide" data-ride="carousel">
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
-                                        <div class="item active"
-                                             style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide3.jpg')">
-                                            <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a>
+                                        <div class="item active">
+                                            <div class="bg-pic" style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
+                                                <div class="b-overlay"></div>
                                             </div>
+                                            <a href=".contact-form" class="page-scroll slide-badge right">Formularz</a>
                                             <div class="tilecaption-box">
                                                 <img class="slide-logo"
                                                      src="http://virtus-gdansk.pl/images/header_decorator.jpg"/>
@@ -151,10 +106,11 @@
                                             </div>
                                             <div class="b-overlay"></div>
                                         </div>
-                                        <div class="item"
-                                             style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide6.jpg')">
-                                            <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a>
+                                        <div class="item">
+                                            <div class="bg-pic" style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
+                                                <div class="b-overlay"></div>
                                             </div>
+                                            <a href=".contact-form" class="page-scroll slide-badge right">Formularz</a>
                                             <div class="tilecaption-box">
                                                 <div class="tilecaption">
                                                     <h3>Anita Podgórska Biuro Rachunkowe</h3>
