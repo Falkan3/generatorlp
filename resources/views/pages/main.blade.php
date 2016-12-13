@@ -73,7 +73,6 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="b-overlay"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -104,7 +103,6 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="b-overlay"></div>
                                         </div>
                                         <div class="item">
                                             <div class="bg-pic" style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
@@ -122,7 +120,6 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="b-overlay"></div>
                                         </div>
                                     </div>
                                 </div>
