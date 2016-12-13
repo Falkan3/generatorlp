@@ -8,159 +8,176 @@
         <div class="container dynamicTile">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-8 tiles">
-                    <div class="col col-sm-6 col-xs-12">
-                        <div class="tile tile-big slow">
-
-                            <div class="carousel slide" data-ride="carousel">
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
-                                    <div class="item active"
-                                         style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
-                                        <div class="slide-badge">Wyróżnione</div>
-                                        <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a></div>
-                                        <img class="slide-logo" src="http://bosque-creative.pl/projekty/demo4/wp-content/uploads/2015/11/logo-www.png" />
-                                        <div class="tilecaption-box">
-                                            <div class="tilecaption">
-                                                <h3>Biuro Rachunkowe ABACO</h3>
-                                                <a href="http://abaco.net.pl/" target="_blank">http://abaco.net.pl/</a>
-                                                <ul>
-                                                    <li>50% zniżki na usługi przez pierwsze 3 m-ce dla nowych firm</li>
-                                                    <li>50 zniżki na 1 m-c dla firm zmieniających biuro rach.</li>
-                                                    <li>24/h dostęp do dokumentów online</li>
-                                                    <li>gratis program do wystawiania faktur</li>
-                                                </ul>
+                    <section>
+                        <div class="col col-sm-6 col-xs-12">
+                            <div class="tile tile-big slow">
+                                <div class="carousel slide" data-ride="carousel">
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active"
+                                             style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
+                                            <div class="slide-badge">Wyróżnione</div>
+                                            <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a>
                                             </div>
-                                        </div>
-                                        <div class="b-overlay"></div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col col-sm-6 col-xs-12">
-                        <div class="tile tile-big fast">
-
-                            <div class="carousel slide" data-ride="carousel">
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
-                                    <div class="item active"
-                                         style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide2.jpg')">
-                                        <div class="slide-badge">Wyróżnione</div>
-                                        <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a></div>
-                                        <div class="tilecaption-box">
-                                            <div class="tilecaption">
-                                                <h3>Biuro Usł. Rach.-Audyt. Grażyna Łukjanow</h3>
-                                                <a href="#"></a>
-                                                <ul>
-                                                    <li>50% zniżki przez pierwsze 3 m-ce</li>
-                                                    <li>gratis prowadzenie kadr przez 6 m-cy (nowi klienci)</li>
-                                                </ul>
+                                            <img class="slide-logo"
+                                                 src="http://bosque-creative.pl/projekty/demo4/wp-content/uploads/2015/11/logo-www.png"/>
+                                            <div class="tilecaption-box">
+                                                <div class="tilecaption">
+                                                    <h3>Biuro Rachunkowe ABACO</h3>
+                                                    <ul>
+                                                        <li>50% zniżki na usługi przez pierwsze 3 m-ce dla nowych firm
+                                                        </li>
+                                                        <li>50 zniżki na 1 m-c dla firm zmieniających biuro rach.</li>
+                                                        <li>24/h dostęp do dokumentów online</li>
+                                                        <li>gratis program do wystawiania faktur</li>
+                                                    </ul>
+                                                </div>
                                             </div>
+                                            <div class="b-overlay"></div>
                                         </div>
-                                        <div class="b-overlay"></div>
-                                    </div>
 
-                                    <div class="item"
-                                         style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide5.jpg')">
-                                        <div class="slide-badge">Wyróżnione</div>
-                                        <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a></div>
-                                        <img class="slide-logo" src="http://www.phuas.pl/uploads/9/0/1/5/90154401/logo-2.jpg" />
-                                        <div class="tilecaption-box">
-                                            <div class="tilecaption">
-                                                <h3>Biuro Rachunkowe ABACO</h3>
-                                                <a href="http://www.phuas.pl/#section_7" target="_blank">http://www.phuas.pl/</a>
-                                                <ul>
-                                                    <li>indywidualne podejście do klienta</li>
-                                                    <li>odbiór dokumentów od klienta</li>
-                                                    <li>wsparcie w strategii podatkowej</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="b-overlay"></div>
                                     </div>
                                 </div>
+
                             </div>
-
                         </div>
-                    </div>
 
-                    <div class="col col-sm-6 col-xs-12">
-                        <div class="tile tile-big">
+                        <div class="col col-sm-6 col-xs-12">
+                            <div class="tile tile-big fast">
 
-                            <div class="carousel slide" data-ride="carousel">
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
-                                    <div class="item active"
-                                         style="background-image: url('http://www.phuas.pl/uploads/9/0/1/5/90154401/7_1.jpg')">
-                                        <div class="tilecaption-box">
-                                            <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a></div>
-                                            <img class="slide-logo" src="{{asset('user_photos/admin/Photos/8a334804169251031d227794d07f72ae.png')}}" />
-                                            <div class="tilecaption">
-                                                <h3>Pomorskie Biuro Rachunkowe Sp. z o.o.</h3>
-                                                <a href="http://pomorskiebiurorachunkowe.pl/" target="_blank">http://pomorskiebiurorachunkowe.pl/</a>
-                                                <ul>
-                                                    <li>30% zniżki przez pierwsze trzy m-ce</li>
-                                                    <li>odbiór dokumentów od klienta</li>
-                                                    <li>pomoc przy założeniu działalności</li>
-                                                </ul>
+                                <div class="carousel slide" data-ride="carousel">
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active"
+                                             style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide2.jpg')">
+                                            <div class="slide-badge">Wyróżnione</div>
+                                            <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a>
                                             </div>
+                                            <div class="tilecaption-box">
+                                                <div class="tilecaption">
+                                                    <h3>Biuro Usł. Rach.-Audyt. Grażyna Łukjanow</h3>
+                                                    <ul>
+                                                        <li>50% zniżki przez pierwsze 3 m-ce</li>
+                                                        <li>gratis prowadzenie kadr przez 6 m-cy (nowi klienci)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="b-overlay"></div>
                                         </div>
-                                        <div class="b-overlay"></div>
+
+                                        <div class="item"
+                                             style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide5.jpg')">
+                                            <div class="slide-badge">Wyróżnione</div>
+                                            <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a>
+                                            </div>
+                                            <img class="slide-logo"
+                                                 src="http://www.phuas.pl/uploads/9/0/1/5/90154401/logo-2.jpg"/>
+                                            <div class="tilecaption-box">
+                                                <div class="tilecaption">
+                                                    <h3>Biuro Rachunkowe ABACO</h3>
+                                                    <ul>
+                                                        <li>indywidualne podejście do klienta</li>
+                                                        <li>odbiór dokumentów od klienta</li>
+                                                        <li>wsparcie w strategii podatkowej</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="b-overlay"></div>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
+                        </div>
+
+                        <div id="test" class="col-sm-12 col-xs-12 tile-description">
 
                         </div>
-                    </div>
-                    <div class="col col-sm-6 col-xs-12">
-                        <div class="tile tile-big">
+                    </section>
 
-                            <div class="carousel slide" data-ride="carousel">
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
-                                    <div class="item active"
-                                         style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide3.jpg')">
-                                        <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a></div>
-                                        <div class="tilecaption-box">
-                                            <img class="slide-logo" src="http://virtus-gdansk.pl/images/header_decorator.jpg" />
-                                            <div class="tilecaption">
-                                                <h3>Biuro Rachunkowe VIRTUS Monika Wojciechowska</h3>
-                                                <a href="http://virtus-gdansk.pl/" target="_blank">http://virtus-gdansk.pl/</a>
-                                                <ul>
-                                                    <li>50% zniżki na usługi przez pierwsze 3 m-ce</li>
-                                                    <li>odbiór dokumentów od klienta</li>
-                                                    <li>wsparcie pośrednika finansowego oraz BHP</li>
-                                                </ul>
+                    <section>
+                        <div class="col col-sm-6 col-xs-12">
+                            <div class="tile tile-big">
+
+                                <div class="carousel slide" data-ride="carousel">
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active"
+                                             style="background-image: url('http://www.phuas.pl/uploads/9/0/1/5/90154401/7_1.jpg')">
+                                            <div class="tilecaption-box">
+                                                <div class="slide-badge bottom"><a href=".contact-form"
+                                                                                   class="page-scroll">Formularz</a>
+                                                </div>
+                                                <img class="slide-logo"
+                                                     src="{{asset('user_photos/admin/Photos/8a334804169251031d227794d07f72ae.png')}}"/>
+                                                <div class="tilecaption">
+                                                    <h3>Pomorskie Biuro Rachunkowe Sp. z o.o.</h3>
+                                                    <ul>
+                                                        <li>30% zniżki przez pierwsze trzy m-ce</li>
+                                                        <li>odbiór dokumentów od klienta</li>
+                                                        <li>pomoc przy założeniu działalności</li>
+                                                    </ul>
+                                                </div>
                                             </div>
+                                            <div class="b-overlay"></div>
                                         </div>
-                                        <div class="b-overlay"></div>
-                                    </div>
-                                    <div class="item"
-                                         style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide6.jpg')">
-                                        <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a></div>
-                                        <div class="tilecaption-box">
-                                            <div class="tilecaption">
-                                                <h3>Anita Podgórska Biuro Rachunkowe</h3>
-                                                <a href="#"></a>
-                                                <ul>
-                                                    <li>20% zniżki przez pierwsze 3 m-ce</li>
-                                                    <li>odbiór dokumentów od klienta</li>
-                                                    <li>doradztwo podatkowe</li>
-                                                    <li>reprezentacja klienta podczas kontroli podatkowej</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="b-overlay"></div>
                                     </div>
                                 </div>
+
                             </div>
+                        </div>
+
+                        <div class="col col-sm-6 col-xs-12">
+                            <div class="tile tile-big">
+
+                                <div class="carousel slide" data-ride="carousel">
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active"
+                                             style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide3.jpg')">
+                                            <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a>
+                                            </div>
+                                            <div class="tilecaption-box">
+                                                <img class="slide-logo"
+                                                     src="http://virtus-gdansk.pl/images/header_decorator.jpg"/>
+                                                <div class="tilecaption">
+                                                    <h3>Biuro Rachunkowe VIRTUS Monika Wojciechowska</h3>
+                                                    <ul>
+                                                        <li>50% zniżki na usługi przez pierwsze 3 m-ce</li>
+                                                        <li>odbiór dokumentów od klienta</li>
+                                                        <li>wsparcie pośrednika finansowego oraz BHP</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="b-overlay"></div>
+                                        </div>
+                                        <div class="item"
+                                             style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/11/slide6.jpg')">
+                                            <div class="slide-badge bottom"><a href=".contact-form" class="page-scroll">Formularz</a>
+                                            </div>
+                                            <div class="tilecaption-box">
+                                                <div class="tilecaption">
+                                                    <h3>Anita Podgórska Biuro Rachunkowe</h3>
+                                                    <ul>
+                                                        <li>20% zniżki przez pierwsze 3 m-ce</li>
+                                                        <li>odbiór dokumentów od klienta</li>
+                                                        <li>doradztwo podatkowe</li>
+                                                        <li>reprezentacja klienta podczas kontroli podatkowej</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="b-overlay"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="test2" class="col-sm-12 col-xs-12 tile-description">
 
                         </div>
-                    </div>
+                    </section>
 
                 </div>
 

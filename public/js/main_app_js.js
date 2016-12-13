@@ -1,9 +1,15 @@
 var tiles;
 var tooltips;
+var index=0;
 
 $(document).ready(function () {
     tiles = $('.dynamicTile > .row > .tiles');
+    tile_items = $('.tiles .item');
+    descs = $('.tile-description');
     tooltips = $('[data-toggle="tooltip"]');
+    tile_items.each(function(){
+        $(this).attr('id', index++);
+    });
 
     $('.tile.tile-small .carousel').carousel({
         interval: 5000
@@ -66,6 +72,30 @@ $(document).ready(function () {
         else {
             tooltips.attr('data-placement', 'top');
         }
+
+    });
+
+    //Click tile
+    descs.hide();
+    tile_items.click(function(e) {
+        var desc = $(this).closest('section').find('.tile-description');
+        if(desc.css('display')=="none" || desc.attr('selected-tile')!=$(this).attr('id'))
+        {
+            desc.html($(this).html());
+            desc.find('.b-overlay').remove();
+            desc.find('.slide-badge').remove();
+            desc.slideDown();
+            var $anchor = desc;
+            $('html, body').stop().animate({
+                scrollTop: $anchor.offset().top-30
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        }
+        else if(desc.attr('selected-tile')==$(this).attr('id'))
+        {
+            desc.slideUp();
+        }
+        desc.attr('selected-tile', $(this).attr('id'));
 
     });
 

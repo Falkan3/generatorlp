@@ -158,14 +158,14 @@ body {
     height: 100%;
 }
 
-.tile .slide-badge {
+.tile .slide-badge, .tile-description .slide-badge {
     position: absolute;
     padding: 5px 25px;
     background-color: #ff9c00;
     z-index: 1;
 }
 
-.tile img.slide-logo {
+.tile img.slide-logo, .tile-description img.slide-logo {
     position: absolute;
     right:0;
     max-width: 35%;
@@ -175,7 +175,7 @@ body {
     margin-top: 10px;
 }
 
-.tile .slide-badge.bottom {
+.tile .slide-badge.bottom, .tile-description .slide-badge.bottom {
     background-color: #f00;
     right: 0;
     bottom: 0;
@@ -183,11 +183,11 @@ body {
     z-index: 2;
 }
 
-.tile .slide-badge.bottom:hover {
+.tile .slide-badge.bottom:hover, .tile-description .slide-badge.bottom:hover{
     background-color: #ff2f23;
 }
 
-.tile .slide-badge.bottom a {
+.tile .slide-badge.bottom a, .tile-description .slide-badge.bottom a {
     color: #fff;
     text-decoration: none;
 }
@@ -316,6 +316,22 @@ div.b-overlay {
     background-color: rgba(0,0,0,0.7);
     z-index: 0;
     transition: all .3s ease-in-out;
+}
+
+.tile .tilecaption ul, .tile img.slide-logo {
+    display: none;
+}
+
+.tile-description .tilecaption-box {
+    position: relative;
+}
+
+.tile-description {
+    color: #000;
+}
+
+.tile-description h3 {
+    font-weight: bold;
 }
 
 @media (max-width: 1200px) {
