@@ -15,13 +15,17 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <div class="bg-pic" style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
+                                            <div class="bg-pic"
+                                                 style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
                                                 <div class="b-overlay"></div>
+                                                <div class="logo-container">
+                                                    <img class="slide-logo"
+                                                         src="http://bosque-creative.pl/projekty/demo4/wp-content/uploads/2015/11/logo-www.png"/>
+
+                                                </div>
                                             </div>
                                             <div class="slide-badge">Wyróżnione</div>
                                             <a href=".contact-form" class="page-scroll slide-badge right">Formularz</a>
-                                            <img class="slide-logo"
-                                                 src="http://bosque-creative.pl/projekty/demo4/wp-content/uploads/2015/11/logo-www.png"/>
                                             <div class="tilecaption-box">
                                                 <div class="tilecaption">
                                                     <h3>Biuro Rachunkowe ABACO</h3>
@@ -43,7 +47,6 @@
                         </div>
 
 
-
                         <div id="test" class="col-sm-12 col-xs-12 tile-description">
 
                         </div>
@@ -57,7 +60,8 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <div class="bg-pic" style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
+                                            <div class="bg-pic"
+                                                 style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
                                                 <div class="b-overlay"></div>
                                             </div>
                                             <a href=".contact-form" class="page-scroll slide-badge right">Formularz</a>
@@ -87,7 +91,8 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <div class="bg-pic" style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
+                                            <div class="bg-pic"
+                                                 style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
                                                 <div class="b-overlay"></div>
                                             </div>
                                             <a href=".contact-form" class="page-scroll slide-badge right">Formularz</a>
@@ -105,7 +110,8 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <div class="bg-pic" style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
+                                            <div class="bg-pic"
+                                                 style="background-image: url('http://abaco.net.pl/wp-content/uploads/2015/10/slide1.jpg')">
                                                 <div class="b-overlay"></div>
                                             </div>
                                             <a href=".contact-form" class="page-scroll slide-badge right">Formularz</a>

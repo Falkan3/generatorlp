@@ -129,7 +129,7 @@ body {
 
 .tile .b-overlay {
     top: 0;
-    height: 50%;
+    height: 35%;
 }
 
 .tilecaption {
@@ -158,9 +158,8 @@ body {
 
 .tilecaption ul {
     margin-top: 10px;
-    list-style: none;
-    padding: 0;
-    text-align: center;
+    padding: 0 0 0 5%;
+    text-align: left;
 }
 
 .tilecaption ul > li:not(:last-child) {
@@ -187,12 +186,20 @@ body {
 
 .tile img.slide-logo, .tile-description img.slide-logo {
     position: absolute;
-    right:0;
-    max-width: 35%;
-    max-height: 15%;
-    z-index: 1;
+    right: 0;
+    max-height: 4%;
+    min-height: 40px;
+    z-index: 2;
     margin-right: 10px;
     margin-top: 10px;
+}
+
+.tile .logo-container img.slide-logo {
+    position: relative;
+    left: -50%;
+    max-height: 4%;
+    min-height: 40px;
+    z-index: 2;
 }
 
 .tile .slide-badge.right {
@@ -351,10 +358,6 @@ div.b-overlay {
     transition: all .3s ease-in-out;
 }
 
-.tile img.slide-logo {
-    display: none;
-}
-
 .tile-description .tilecaption-box {
     position: relative;
 }
@@ -368,7 +371,13 @@ div.b-overlay {
 }
 
 .bg-pic {
-    height: 50%;
+    height: 35%;
+}
+
+.tile .logo-container {
+    position: absolute;
+    left: 50%;
+    top: 10%;
 }
 
 @media (max-width: 1200px) {
@@ -399,6 +408,17 @@ div.b-overlay {
     .contact-form .btn {
         font-size: 16px;
         padding: 15px 25px;
+    }
+
+    .tiles .tile .item {
+        height: 600px;
+    }
+
+    .tilecaption ul {
+        margin-top: 10px;
+        list-style: none;
+        padding: 0;
+        text-align: center;
     }
 }
 
