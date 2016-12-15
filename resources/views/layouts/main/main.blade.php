@@ -11,11 +11,12 @@
     <title>@yield('title', 'index')</title>
 
 <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="{{URL::asset('css/bootstrap/bootstrap.min.css')}}" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- custom -->
+    <link rel="stylesheet" href="{{URL::asset('css/ribbons.css')}}">
     <link rel="stylesheet" href="{{URL::asset('css/main_app_style.css')}}">
     <!-- /Styles -->
 
@@ -52,6 +53,7 @@
 <!-- Bootstrap 3.3.6 -->
 <script src="{{URL::asset('js/bootstrap/bootstrap.min.js')}}"></script>
 
+<script src="{{URL::asset('js/notify.min.js')}}"></script>
 <script src="{{URL::asset('js/scrolling_nav.js')}}"></script>
 <script src="{{URL::asset('js/contact_form.js')}}"></script>
 <script src="{{URL::asset('js/main_app_js.js')}}"></script>

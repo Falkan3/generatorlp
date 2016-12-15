@@ -2,6 +2,7 @@ var tiles;
 var tiles_sng;
 var tooltips;
 var index=0;
+var alertItems=["Oferta 1", "Oferta 2", "Oferta 3", "Oferta 4", "Oferta 5"];
 
 $(document).ready(function () {
     tiles = $('.dynamicTile > .row > .tiles');
@@ -109,6 +110,19 @@ $(document).ready(function () {
 
     });
     */
+
+    $.notify(
+        "Start",
+        { position:"b l", className:"info" }
+    );
+
+    window.setInterval(function(){
+        var item = alertItems[Math.floor(Math.random()*alertItems.length)];
+        $.notify(
+            item,
+            { position:"b l", className:"info" }
+        );
+    }, 2000);
 
 });
 

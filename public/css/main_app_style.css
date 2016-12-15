@@ -40,7 +40,7 @@ header nav #logo {
 
 body {
     background: #fff; /*#227ab2;*/
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #000;
     font-size: 14px;
     margin: 0;
@@ -62,7 +62,7 @@ body {
 }
 
 .tiles .tile .item {
-    height: 500px;
+    height: 350px;
 }
 
 #tile1 {
@@ -111,20 +111,21 @@ body {
 }
 
 .tilecaption-box {
-    position: absolute;
-    display: table !important;
-    height: 100%;
     width: 100%;
     text-align: center;
-    vertical-align: middle;
-    z-index: 1;
+    z-index: -1;
     background-color: #fff;
     border: solid 2px #ddd;
     border-top: none;
+    position: relative;
 }
 
 .tile .tilecaption-box {
-    height: 50%;
+    height: 65%;
+}
+
+.tile .tilecaption h3 {
+    margin-top: 0;
 }
 
 .tile .b-overlay {
@@ -133,9 +134,7 @@ body {
 }
 
 .tilecaption {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0 7%;
+    padding: 50px 7% 0 7%;
     margin: 0 !important;
 }
 
@@ -166,6 +165,12 @@ body {
     margin-bottom: 5px;
 }
 
+
+.tilecaption span.highlight.cut {
+    font-size: x-large;
+    color: #0ad600;
+}
+
 .tile .item, .tile .item .bg-pic {
     background-position: top center;
     background-repeat: no-repeat;
@@ -182,6 +187,43 @@ body {
     background-color: #ff9c00;
     top: 0;
     z-index: 1;
+    left: -5px;
+}
+
+.tile .slide-badge.promo {
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+}
+
+.tile .slide-badge.right {
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+}
+
+.tile .slide-badge.promo::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    border: 5px solid #cb7900;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+.tile .slide-badge.right::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    border: 5px solid #d30000;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
 }
 
 .tile img.slide-logo, .tile-description img.slide-logo {
@@ -190,8 +232,8 @@ body {
     max-height: 4%;
     min-height: 40px;
     z-index: 2;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
 }
 
 .tile .logo-container img.slide-logo {
@@ -205,9 +247,10 @@ body {
 .tile .slide-badge.right {
     background-color: #f00;
     top: 0;
-    right: 0;
+    right: -5px;
     display: none;
     z-index: 2;
+    left: auto;
 }
 
 .tile .slide-badge.right :hover {
@@ -221,6 +264,7 @@ body {
     bottom: 0;
     display: none;
     z-index: 2;
+    left: auto;
 }
 
 .tile .slide-badge.bottom:hover, .tile-description .slide-badge.bottom:hover{
@@ -398,8 +442,6 @@ div.b-overlay {
 }
 
 @media (max-width: 768px) {
-
-
     .dynamicTile .contact-form {
         padding-left: 20px;
         padding-right: 20px;
@@ -411,7 +453,7 @@ div.b-overlay {
     }
 
     .tiles .tile .item {
-        height: 600px;
+        height: 400px;
     }
 
     .tilecaption ul {
@@ -419,6 +461,15 @@ div.b-overlay {
         list-style: none;
         padding: 0;
         text-align: center;
+    }
+
+    .corner-ribbon {
+        line-height: 40px;
+    }
+
+    .corner-ribbon.top-left {
+        top: 10px;
+        left: -75px;
     }
 }
 
