@@ -122,7 +122,7 @@ $(document).ready(function () {
             item,
             { position:"b l", className:"info" }
         );
-    }, 2000);
+    }, 10000);
 
 });
 

@@ -6,7 +6,9 @@
 @section('content')
     <div class="content">
         <div class="container dynamicTile">
-            <div class="row">
+            <div class="row text-center">
+                <h3 class="no-margin">NAJLEPSZE WYNEGOCJOWANE <span class="highlight">OFERTY PROMOCYJNE</span></h3>
+                <h3 class="no-margin margin-bottom-medium"><span class="highlight big colored">TRÓJMIEJSKICH RACHUNKOWOŚCI</span></h3>
                 <div class="col-xs-12 col-sm-12 col-md-8 tiles">
                     <section>
                         <div class="col col-sm-12 col-xs-12">

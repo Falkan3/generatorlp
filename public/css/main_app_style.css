@@ -34,6 +34,27 @@ header nav #logo {
     padding: 30px 15px;
 }
 
+.no-margin {
+    margin: 0;
+}
+
+.margin-bottom-medium {
+    margin-bottom: 30px;
+}
+
+span.highlight {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+span.highlight.big {
+    font-size: 32px;
+}
+
+span.highlight.colored {
+    color: #ff9c00;
+}
+
 /* /Utilites *************************************************************************/
 
 /* Content *************************************************************************/
@@ -165,7 +186,6 @@ body {
 .tilecaption ul > li:not(:last-child) {
     margin-bottom: 5px;
 }
-
 
 .tilecaption span.highlight.cut {
     font-size: x-large;
@@ -429,6 +449,10 @@ div.b-overlay {
     left: -65px;
 }
 
+.notifyjs-corner div {
+    white-space: normal;
+}
+
 @media (max-width: 1200px) {
     .contact-form .btn {
         padding: 5px;
@@ -450,6 +474,10 @@ div.b-overlay {
     .dynamicTile .contact-form {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .dynamicTile .contact-form, .dynamicTile .contact-form > div {
+        min-height: 0 !important;
     }
 
     .contact-form .btn {
