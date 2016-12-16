@@ -33,12 +33,12 @@
                                                 <div class="tilecaption">
                                                     <h3>Biuro Rachunkowe ABACO</h3>
                                                     <ul>
-                                                        <li><span class="highlight cut">50%</span> zniżki na usługi
+                                                        <li><span class="highlight">50%</span> zniżki na usługi
                                                             przez pierwsze 3 m-ce dla nowych firm
                                                         </li>
-                                                        <li><span class="highlight cut">50%</span> zniżki na 1 m-c dla firm zmieniających biuro rach.</li>
-                                                        <li><span class="highlight cut">24h/7</span> dostęp do dokumentów online</li>
-                                                        <li><span class="highlight gratis">gratis</span> program do wystawiania faktur</li>
+                                                        <li><span class="highlight">50%</span> zniżki na 1 m-c dla firm zmieniających biuro rach.</li>
+                                                        <li><span class="highlight">24h/7</span> dostęp do dokumentów online</li>
+                                                        <li><span class="highlight">gratis</span> program do wystawiania faktur</li>
                                                     </ul>
                                                 </div>
                                             </div>
