@@ -54,7 +54,7 @@ body {
 /* Tiles *************************************************************************/
 
 .dynamicTile .col {
-    padding: 5px;
+    padding: 15px 5px;
 }
 
 .tile {
@@ -62,7 +62,7 @@ body {
 }
 
 .tiles .tile .item {
-    height: 350px;
+    height: 400px;
 }
 
 #tile1 {
@@ -126,6 +126,7 @@ body {
 
 .tile .tilecaption h3 {
     margin-top: 0;
+    font-size: large;
 }
 
 .tile .b-overlay {
@@ -134,7 +135,7 @@ body {
 }
 
 .tilecaption {
-    padding: 50px 7% 0 7%;
+    padding: 40px 7% 0 7%;
     margin: 0 !important;
 }
 
@@ -171,6 +172,11 @@ body {
     color: #0ad600;
 }
 
+.tilecaption span.highlight.gratis {
+    font-size: x-large;
+    color: #d30000;
+}
+
 .tile .item, .tile .item .bg-pic {
     background-position: top center;
     background-repeat: no-repeat;
@@ -185,19 +191,9 @@ body {
     position: absolute;
     padding: 5px 25px;
     background-color: #ff9c00;
-    top: 0;
+    top: -4px;
     z-index: 1;
     left: -5px;
-}
-
-.tile .slide-badge.promo {
-    border-radius: 5px;
-    border-bottom-left-radius: 0;
-}
-
-.tile .slide-badge.right {
-    border-radius: 5px;
-    border-bottom-right-radius: 0;
 }
 
 .tile .slide-badge.promo::before {
@@ -229,7 +225,7 @@ body {
 .tile img.slide-logo, .tile-description img.slide-logo {
     position: absolute;
     right: 0;
-    max-height: 4%;
+    max-height: 50px;
     min-height: 40px;
     z-index: 2;
     margin-right: 5px;
@@ -239,14 +235,14 @@ body {
 .tile .logo-container img.slide-logo {
     position: relative;
     left: -50%;
-    max-height: 4%;
+    max-height: 50px;
     min-height: 40px;
     z-index: 2;
 }
 
 .tile .slide-badge.right {
     background-color: #f00;
-    top: 0;
+    top: -4px;
     right: -5px;
     display: none;
     z-index: 2;
@@ -278,7 +274,7 @@ body {
 
 .contact-form {
     min-height: 350px;
-    padding: 5px 0;
+    padding: 15px 0;
 }
 
 .contact-form > div {
@@ -424,6 +420,15 @@ div.b-overlay {
     top: 10%;
 }
 
+.corner-ribbon {
+    line-height: 40px;
+}
+
+.corner-ribbon.top-left {
+    top: 15px;
+    left: -65px;
+}
+
 @media (max-width: 1200px) {
     .contact-form .btn {
         padding: 5px;
@@ -453,7 +458,7 @@ div.b-overlay {
     }
 
     .tiles .tile .item {
-        height: 400px;
+        height: 450px;
     }
 
     .tilecaption ul {
@@ -464,7 +469,7 @@ div.b-overlay {
     }
 
     .corner-ribbon {
-        line-height: 40px;
+        line-height: 35px;
     }
 
     .corner-ribbon.top-left {

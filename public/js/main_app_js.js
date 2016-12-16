@@ -2,7 +2,7 @@ var tiles;
 var tiles_sng;
 var tooltips;
 var index=0;
-var alertItems=["Oferta 1", "Oferta 2", "Oferta 3", "Oferta 4", "Oferta 5"];
+var alertItems=["4 osoby oglądają właśnie oferty nieruchomości", "2min temu zostało dokonane zamówienie na usługi rachunkowe"];
 
 $(document).ready(function () {
     tiles = $('.dynamicTile > .row > .tiles');
@@ -34,8 +34,8 @@ $(document).ready(function () {
             $(this).height($(this).width());
         });
         */
-        $('.contact-form').css('min-height', tiles.height() - 10);
-        $('.contact-form > div').css('min-height', tiles.height() - 10);
+        $('.contact-form').css('min-height', tiles.height() - 30);
+        $('.contact-form > div').css('min-height', tiles.height() - 30);
         tooltips.attr('data-placement', 'left');
     }
     else {
@@ -75,8 +75,8 @@ $(document).ready(function () {
             });
             */
 
-            $('.contact-form').css('min-height', tiles.height() - 10);
-            $('.contact-form > div').css('min-height', tiles.height() - 10);
+            $('.contact-form').css('min-height', tiles.height() - 30);
+            $('.contact-form > div').css('min-height', tiles.height() - 30);
             tooltips.attr('data-placement', 'left');
         }
         else {
