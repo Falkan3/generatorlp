@@ -464,6 +464,7 @@ div.b-overlay {
     background-size: 16px 16px !important;
     background-position: 5px 9px !important;
     max-width: 300px;
+    font-size: 12px;
 }
 
 @media (max-width: 1200px) {
