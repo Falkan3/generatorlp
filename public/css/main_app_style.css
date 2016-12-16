@@ -181,10 +181,11 @@ body {
     margin-top: 10px;
     padding: 0 0 0 5%;
     text-align: left;
+    list-style: none;
 }
 
 .tilecaption ul > li:not(:last-child) {
-    margin-bottom: 5px;
+   /* margin-bottom: 5px;*/
 }
 
 .tilecaption span.highlight.cut {
@@ -453,6 +454,18 @@ div.b-overlay {
     white-space: normal;
 }
 
+.notifyjs-bootstrap-black {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal !important;
+    background-color: #212121 !important;
+    border-color: #000 !important;
+    background-image: url('../images/dist/bell.png') !important;
+    background-size: 16px 16px !important;
+    background-position: 5px 9px !important;
+    max-width: 300px;
+}
+
 @media (max-width: 1200px) {
     .contact-form .btn {
         padding: 5px;
@@ -491,9 +504,8 @@ div.b-overlay {
 
     .tilecaption ul {
         margin-top: 10px;
-        list-style: none;
         padding: 0;
-        text-align: center;
+        text-align: left;
     }
 
     .corner-ribbon {

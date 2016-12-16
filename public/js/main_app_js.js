@@ -120,9 +120,9 @@ $(document).ready(function () {
         var item = alertItems[Math.floor(Math.random()*alertItems.length)];
         $.notify(
             item,
-            { position:"b l", className:"info" }
+            { position:"b l", className:"black", showDuration: 800, autoHideDelay: 7500, }
         );
-    }, 10000);
+    }, 20000);
 
 });
 
