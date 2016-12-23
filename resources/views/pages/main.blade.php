@@ -41,6 +41,7 @@
                                                         <li><span class="highlight">gratis</span> program do wystawiania faktur</li>
                                                     </ul>
                                                 </div>
+                                                <a class="btn medium-btn" href="http://abaco.net.pl/">Zobacz ofertę</a>
                                             </div>
                                         </div>
 
@@ -151,8 +152,11 @@
                 <div class="col-xs-12 col-sm-12 col-md-4 contact-form">
                     <div>
                         <h1><span class="text-bold">Wypełnij formularz</span></h1>
+                        <p>Zostaw numer telefonu
+                            oddzwonimy BEZPŁATNIE
+                            jak skorzystać z wybranej PROMOCJI</p>
 
-                        <div class="padding-medium">
+                        <div class="padding-small">
                             {!! Form::open(['url' => '#', 'method' => 'post', 'id' => 'contact-form']) !!}
                             <div class="col-sm-10 center-block">
                                 <a href="#" data-toggle="tooltip" data-placement="left"
@@ -165,7 +169,7 @@
                             </div>
 
                             <div class="col-sm-10 center-block">
-                                {{Form::submit('CHCĘ SKORZYSTAĆ', ['class' => "btn"])}}
+                                {{Form::submit('SPRAWDŹ PROMOCJĘ', ['class' => "btn"])}}
                             </div>
 
                             <div class="text-left padding-small">

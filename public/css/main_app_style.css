@@ -296,6 +296,7 @@ body {
 .contact-form {
     min-height: 350px;
     padding: 15px 0;
+    color: #fff;
 }
 
 .contact-form > div {
@@ -309,6 +310,10 @@ body {
 span.text-bold
 {
     font-weight: bold;
+}
+
+.contact-form label.small {
+    font-weight: normal;
 }
 
 .contact-form form input[type="text"], .contact-form form input[type="textarea"] {
@@ -367,21 +372,29 @@ span.text-bold
     font-style: italic;
 }
 
-.contact-form .btn {
+a.btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: auto !important;
+}
+
+.contact-form .btn, a.btn {
     display: block;
-    padding: 15px 30px;
+    padding: 10px 30px;
     width: 100%;
     font-size: 24px;
     font-weight: bold;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 0;
     background-color: #3a3a38;
     white-space: normal;
     color: #fff;
 }
 
-.contact-form .btn:hover {
-    background-color: rgb(69, 99, 91);
+.contact-form .btn:hover, a.btn:hover {
+    background-color: #fff;
+    color: #3a3a38;
 }
 
 .col-sm-1.center-block, .col-sm-10.center-block, .col-sm-11.center-block, .col-sm-12.center-block, .col-sm-2.center-block, .col-sm-3.center-block, .col-sm-4.center-block, .col-sm-5.center-block, .col-sm-6.center-block, .col-sm-7.center-block, .col-sm-8.center-block, .col-sm-9.center-block {
@@ -404,7 +417,7 @@ span.text-bold
 }
 
 .contact-form .link {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-size: 11px;
 }
@@ -414,7 +427,7 @@ div.b-overlay {
     height: 100%;
     width: 100%;
     bottom: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.5);
     z-index: 0;
     transition: all .3s ease-in-out;
 }
@@ -481,6 +494,11 @@ div.b-overlay {
 
     .tile .slide-badge.bottom, .tile .slide-badge.right  {
         display: block;
+    }
+
+    a.btn {
+        bottom: 0;
+        right: 0;
     }
 }
 
