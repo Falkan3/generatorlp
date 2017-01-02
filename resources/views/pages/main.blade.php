@@ -27,18 +27,19 @@
                                                          src="http://bosque-creative.pl/projekty/demo4/wp-content/uploads/2015/11/logo-www.png"/>
 
                                                 </div>
+                                                <img class="widget"
+                                                     src="{{asset('images/np/mark1.png')}}"/>
                                             </div>
                                             <div class="tilecaption-box">
                                                 <div class="corner-ribbon top-left green shadow">-50%</div>
                                                 <div class="tilecaption">
                                                     <h3>Biuro Rachunkowe ABACO</h3>
                                                     <ul>
-                                                        <li><span class="highlight">50%</span> zniżki na usługi
-                                                            przez pierwsze 3 m-ce dla nowych firm
-                                                        </li>
-                                                        <li><span class="highlight">50%</span> zniżki na 1 m-c dla firm zmieniających biuro rach.</li>
-                                                        <li><span class="highlight">24h/7</span> dostęp do dokumentów online</li>
-                                                        <li><span class="highlight">gratis</span> program do wystawiania faktur</li>
+                                                        <li><span class="highlight">50% zniżki na usługi rachunkowe</span></li>
+                                                        <li><span class="greyed">oferta dotyczy pierwszych 3-m/cy i dotyczy nowych firm, lub</span></li>
+                                                        <li><span class="greyed">50% na 1 m-c dla firm zmieniajacych biuro rachunkowe</span></li>
+                                                        <li><span class="greyed">24h/7 dostęp do dokumentów online</span></li>
+                                                        <li><span class="greyed">gratis program do wystawiania faktur</span></li>
                                                     </ul>
                                                 </div>
                                                 <a class="btn medium-btn" href="http://abaco.net.pl/">Zobacz ofertę</a>

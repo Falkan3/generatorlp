@@ -43,7 +43,7 @@ header nav #logo {
 }
 
 span.highlight {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -55,13 +55,18 @@ span.highlight.colored {
     color: #ff9c00;
 }
 
+span.greyed {
+    color: #9e9e9e;
+}
+
 /* /Utilites *************************************************************************/
 
 /* Content *************************************************************************/
 
 body {
     background: #fff; /*#227ab2;*/
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Noto Sans', sans-serif;
     color: #000;
     font-size: 14px;
     margin: 0;
@@ -156,7 +161,7 @@ body {
 }
 
 .tilecaption {
-    padding: 50px 12% 0 12%;
+    padding: 35px 12% 0 12%;
     margin: 0 !important;
 }
 
@@ -181,7 +186,14 @@ body {
     margin-top: 10px;
     padding: 0;
     text-align: left;
-    list-style: none;
+    list-style: square;
+}
+
+img.widget {
+    height: 110px;
+    position: absolute;
+    right: 5%;
+    z-index: 1;
 }
 
 .tilecaption ul > li:not(:last-child) {
@@ -314,6 +326,7 @@ span.text-bold
 
 .contact-form label.small {
     font-weight: normal;
+    font-size: 75%;
 }
 
 .contact-form form input[type="text"], .contact-form form input[type="textarea"] {
@@ -385,7 +398,7 @@ a.btn {
     width: 100%;
     font-size: 24px;
     font-weight: bold;
-    border: 1px solid #ddd;
+    border: 1px solid #3a3a38;
     border-radius: 0;
     background-color: #3a3a38;
     white-space: normal;
@@ -463,6 +476,10 @@ div.b-overlay {
     left: -65px;
 }
 
+.notifyjs-corner {
+    bottom: 8% !important;
+}
+
 .notifyjs-corner div {
     white-space: normal;
 }
@@ -478,6 +495,10 @@ div.b-overlay {
     background-position: 5px 9px !important;
     max-width: 300px;
     font-size: 12px;
+}
+
+.notifyjs-bootstrap-black span {
+    text-shadow: none;
 }
 
 @media (max-width: 1200px) {
@@ -518,7 +539,11 @@ div.b-overlay {
     }
 
     .tiles .tile .item {
-        height: 450px;
+        min-height: 450px;
+    }
+
+    .tiles .tile.tile-small .item {
+        min-height: 700px;
     }
 
     .tilecaption ul {
@@ -534,6 +559,10 @@ div.b-overlay {
     .corner-ribbon.top-left {
         top: 10px;
         left: -75px;
+    }
+
+    .tilecaption {
+        padding: 50px 12% 0 12%;
     }
 }
 
