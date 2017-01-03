@@ -172,15 +172,15 @@
                                    title="Wpisz poprawny numer telefonu (XXX-XXX-XXX)">{{Form::text('telefon', '', ['class' => "contact-form-field", 'placeholder' => 'Numer telefonu'])}}</a>
                             </div>
 
-                            <div id="status" class="hidden"></div>
+                            <img id="loading_ajax"
+                                 src="{{URL::asset('images/dist/gears.gif')}}" alt="loading..."
+                                 class="hidden centered-block"/>
+
+                            <div id="status" class="hidden"><p></p></div>
 
                             <div class="col-sm-10 center-block">
                                 {{Form::submit('SPRAWDŹ PROMOCJĘ', ['class' => "btn"])}}
                             </div>
-
-                            <img id="loading_ajax"
-                                 src="{{URL::asset('images/dist/gears.gif')}}" alt="loading..."
-                                 class="hidden centered-block"/>
 
                             <div class="text-left padding-small">
                                 <div class="row">

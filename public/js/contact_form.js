@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var form = $("form#contact-form");
     var status = $("#status");
-    var status_text = $("#status .modal-content p");
+    var status_text = $("#status p");
     var imie= $("form#contact-form [name='imie']");
     var nrtelefonu= $("form#contact-form [name='telefon']");
     var url = $("form#contact-form").attr("action");
@@ -63,8 +63,7 @@ $(document).ready(function() {
                     //status.removeClass("alert-success");
                     //status.addClass("alert-danger");
                 }
-                //status.removeClass("invisible");
-                status.css("display", "block");
+                status.removeClass("hidden");
             },
             error: function(data){
                 // Error...
@@ -74,8 +73,7 @@ $(document).ready(function() {
                     // you can show both index and value to know how the array is indexed in javascript (but it should be the same way it was in the php script)
                     status_text.append("<p>" + data.message[index]+'</p>');
                 }
-                //status.removeClass("invisible");
-                status.css("display", "block");
+                status.removeClass("hidden");
             }
         });
 

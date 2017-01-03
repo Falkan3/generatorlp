@@ -67,7 +67,6 @@ $(document).ready(function () {
 
     $(window).bind('resizeEnd', function () {
         resizeTiles();
-        console.log($(document).width());
         if ($(window).width() > 974) {
             /*
             $(".tile.tile-small").each(function (e) {

@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\User;
+use App\Contact;
 
 class FormController extends Controller
 {
@@ -31,8 +34,8 @@ class FormController extends Controller
 
         if (empty($response)) {
             $contact = new Contact;
-            $contact->imie = $imie;
-            $contact->telefon = $telefon;
+            $contact->name = $imie;
+            $contact->tel = $telefon;
             $contact->save();
 
             try {
@@ -40,7 +43,7 @@ class FormController extends Controller
                     foreach ($admins as $admin) {
                         Mail::queue('emails.reminder', ['imie' => $imie, 'telefon' => $telefon],
                             function ($m) use ($admin, $imie, $telefon, $subject) {
-                                $m->from($imie, $telefon);
+                                $m->from($admin->email, $telefon);
 
                                 $m->to($admin->email)->subject($subject);
                             });
