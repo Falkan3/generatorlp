@@ -42,7 +42,7 @@
                                                         <li><span class="greyed">gratis program do wystawiania faktur</span></li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn" href="http://abaco.net.pl/">Zobacz ofertę</a>
+                                                <a class="btn medium-btn" href="http://abaco.net.pl/" target="_blank">Zobacz ofertę</a>
                                             </div>
                                         </div>
 
@@ -83,7 +83,7 @@
                                                         <li>pomoc przy założeniu działalności</li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn" href="http://pomorskiebiurorachunkowe.pl/">Zobacz ofertę</a>
+                                                <a class="btn medium-btn" href="http://pomorskiebiurorachunkowe.pl/" target="_blank">Zobacz ofertę</a>
                                             </div>
                                         </div>
                                     </div>
@@ -117,7 +117,7 @@
                                                         <li>wsparcie pośrednika finansowego oraz BHP</li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn" href="http://www.xn--virtus-gdask-ddc.pl/">Zobacz ofertę</a>
+                                                <a class="btn medium-btn" href="http://www.xn--virtus-gdask-ddc.pl/" target="_blank">Zobacz ofertę</a>
                                             </div>
                                         </div>
                                         <div class="item">
@@ -137,7 +137,7 @@
                                                         <li>reprezentacja klienta podczas kontroli podatkowej</li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn" href="http://podgorska.net.pl/">Zobacz ofertę</a>
+                                                <a class="btn medium-btn" href="http://podgorska.net.pl/" target="_blank">Zobacz ofertę</a>
                                             </div>
                                         </div>
                                     </div>
