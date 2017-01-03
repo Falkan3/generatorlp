@@ -33,5 +33,6 @@ Route::group(['middleware' => ['web', 'auth']], function () {
 
 Route::group(['middleware' => ['web']], function () {
     Route::get('p/{id}', 'MainController@ViewPage');
+    Route::post('form/1', 'FormController@PageOneContactForm');
 });
 

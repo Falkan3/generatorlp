@@ -9,10 +9,10 @@ $(document).ready(function() {
 
     $(document)
         .ajaxStart(function () {
-            loading_gif.removeClass("invisible");
+            loading_gif.removeClass("hidden");
         })
         .ajaxStop(function () {
-            loading_gif.addClass("invisible");
+            loading_gif.addClass("hidden");
         });
 
     form.submit(function(e) {
@@ -81,7 +81,7 @@ $(document).ready(function() {
 
     });
 
-    imie.on("input", function() {
+    imie.on("blur", function() {
         if(!isName(imie.val()))
         {
             imie.removeClass("correct_input");
@@ -98,7 +98,7 @@ $(document).ready(function() {
         }
     });
 
-    nrtelefonu.on("input", function() {
+    nrtelefonu.on("blur", function() {
         if(nrtelefonu.val().length>0 && !isTelephoneNumber(nrtelefonu.val()))
         {
             nrtelefonu.removeClass("correct_input");

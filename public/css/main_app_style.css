@@ -93,7 +93,7 @@ body {
 }
 
 .tiles .tile .item {
-    height: 400px;
+    height: 450px;
 }
 
 #tile1 {
@@ -485,7 +485,7 @@ div.b-overlay {
     height: 100%;
     width: 100%;
     bottom: 0;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.2);
     z-index: 0;
     transition: all .3s ease-in-out;
 }
@@ -546,6 +546,10 @@ div.b-overlay {
     text-shadow: none;
 }
 
+img#loading_ajax {
+    margin: 10px;
+}
+
 @media (max-width: 1200px) {
     .contact-form .btn {
         padding: 5px;
@@ -560,11 +564,6 @@ div.b-overlay {
 
     .tile .slide-badge.bottom, .tile .slide-badge.right  {
         display: block;
-    }
-
-    a.btn {
-        bottom: 0;
-        right: 0;
     }
 }
 
@@ -584,11 +583,11 @@ div.b-overlay {
     }
 
     .tiles .tile .item {
-        min-height: 450px;
+        min-height: 400px;
     }
 
     .tiles .tile.tile-small .item {
-        min-height: 700px;
+        min-height: 500px;
     }
 
     .tilecaption ul {
@@ -608,6 +607,24 @@ div.b-overlay {
 
     .tilecaption {
         padding: 50px 12% 0 12%;
+    }
+
+    .tile.tile-big .tilecaption {
+        font-size: 18px;
+    }
+
+    .tile .widget {
+        display: none;
+    }
+}
+
+@media (max-width: 536px) {
+    .tiles .tile .item {
+        min-height: 450px;
+    }
+
+    .tiles .tile.tile-small .item {
+        min-height: 600px;
     }
 }
 

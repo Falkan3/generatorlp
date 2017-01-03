@@ -161,7 +161,7 @@
                             jak skorzystać z wybranej PROMOCJI</p>
 
                         <div class="padding-small">
-                            {!! Form::open(['url' => '#', 'method' => 'post', 'id' => 'contact-form']) !!}
+                            {!! Form::open(['url' => url('form/1'), 'method' => 'post', 'id' => 'contact-form']) !!}
                             <div class="col-sm-10 center-block">
                                 <a href="#" data-toggle="tooltip" data-placement="left"
                                    title="Wpisz poprawne imię">{{Form::text('imie', '', ['class' => "contact-form-field", 'placeholder' => 'Imię'])}}</a>
@@ -172,9 +172,15 @@
                                    title="Wpisz poprawny numer telefonu (XXX-XXX-XXX)">{{Form::text('telefon', '', ['class' => "contact-form-field", 'placeholder' => 'Numer telefonu'])}}</a>
                             </div>
 
+                            <div id="status" class="hidden"></div>
+
                             <div class="col-sm-10 center-block">
                                 {{Form::submit('SPRAWDŹ PROMOCJĘ', ['class' => "btn"])}}
                             </div>
+
+                            <img id="loading_ajax"
+                                 src="{{URL::asset('images/dist/gears.gif')}}" alt="loading..."
+                                 class="hidden centered-block"/>
 
                             <div class="text-left padding-small">
                                 <div class="row">
@@ -199,11 +205,11 @@
                             {!! Form::close() !!}
 
                             <div class="row">
-                                <div class="col-xs-12 col-sm-6 text-center">
+                                <div class="col-xs-6 text-center">
                                     <a href="https://rachunkowosc.negocjujemypromocje.pl/polityka-prywatnosci"
                                        class="link left" target="_blank">Polityka prywatności</a>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 text-center">
+                                <div class="col-xs-6 text-center">
                                     <a href="https://rachunkowosc.negocjujemypromocje.pl/polityka-prywatnosci"
                                        class="link right" target="_blank">Polityka cookies</a>
                                 </div>

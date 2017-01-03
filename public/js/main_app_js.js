@@ -3,6 +3,8 @@ var tiles_sng;
 var tooltips;
 var index=0;
 var alertItems=["4 osoby oglądają właśnie oferty nieruchomości", "2min temu zostało dokonane zamówienie na usługi rachunkowe"];
+var contactForm = $('.contact-form');
+var contactFormDivs = $('.contact-form > div');
 
 $(document).ready(function () {
     tiles = $('.dynamicTile > .row > .tiles');
@@ -25,7 +27,7 @@ $(document).ready(function () {
         $(this).attr('id', index++);
     });
     resizeTiles();
-    if ($(window).width() > 768) {
+    if ($(window).width() > 974) {
         /*
         $(".tile.tile-small").each(function (e) {
             $(this).height($(this).width() / 2);
@@ -34,11 +36,13 @@ $(document).ready(function () {
             $(this).height($(this).width());
         });
         */
-        $('.contact-form').css('min-height', tiles.height() - 30);
-        $('.contact-form > div').css('min-height', tiles.height() - 30);
+        contactForm.css('min-height', tiles.height() - 30);
+        contactFormDivs.css('min-height', tiles.height() - 30);
         tooltips.attr('data-placement', 'left');
     }
     else {
+        contactForm.css('min-height', 'auto');
+        contactFormDivs.css('min-height', 'auto');
         tooltips.attr('data-placement', 'top');
     }
 
@@ -63,7 +67,8 @@ $(document).ready(function () {
 
     $(window).bind('resizeEnd', function () {
         resizeTiles();
-        if ($(window).width() > 768) {
+        console.log($(document).width());
+        if ($(window).width() > 974) {
             /*
             $(".tile.tile-small").each(function (e) {
                 $(this).height($(this).width() / 2);
@@ -75,11 +80,13 @@ $(document).ready(function () {
             });
             */
 
-            $('.contact-form').css('min-height', tiles.height() - 30);
-            $('.contact-form > div').css('min-height', tiles.height() - 30);
+            contactForm.css('min-height', tiles.height() - 30);
+            contactFormDivs.css('min-height', tiles.height() - 30);
             tooltips.attr('data-placement', 'left');
         }
         else {
+            contactForm.css('min-height', 'auto');
+            contactFormDivs.css('min-height', 'auto');
             tooltips.attr('data-placement', 'top');
         }
 
