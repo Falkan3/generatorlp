@@ -24,6 +24,13 @@ class FormController extends Controller
 
     public function PageOneContactForm(Request $request)
     {
+        if($request->agree1 != 1 || $request->agree2 != 1 || $request->agree3 != 1)
+        {
+            return response()->json([
+                'success' => false,
+                'message' => ['Proszę zaznaczyć wszystkie zgody na przetwarzanie informacji']
+            ]);
+        }
         $admins = User::all();
         $imie = $request['imie'];
         $telefon = $request['telefon'];

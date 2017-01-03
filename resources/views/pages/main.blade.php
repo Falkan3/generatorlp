@@ -185,19 +185,19 @@
                             <div class="text-left padding-small">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-10 col-md-12 center-block">
-                                        <div class="col-xs-1">{{Form::checkbox('agree1', 'agree1', 1)}}</div>
+                                        <div class="col-xs-1">{{Form::checkbox('agree1', 1, 1)}}</div>
                                         <div class="col-xs-10">{{Form::label('agree1', 'Zgoda na gromadzenie i przetwarzanie danych osobowych', ['class' => 'control-label small'])}}</div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-10 col-md-12 center-block">
-                                        <div class="col-xs-1">{{Form::checkbox('agree2', 'agree1', 1)}}</div>
+                                        <div class="col-xs-1">{{Form::checkbox('agree2', 1, 1)}}</div>
                                         <div class="col-xs-10">{{Form::label('agree2', 'Zgoda na otrzymywanie informacji handlowych', ['class' => 'control-label small'])}}</div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-10 col-md-12 center-block">
-                                        <div class="col-xs-1">{{Form::checkbox('agree3', 'agree1', 1)}}</div>
+                                        <div class="col-xs-1">{{Form::checkbox('agree3', 1, 1)}}</div>
                                         <div class="col-xs-10">{{Form::label('agree3', 'Zgoda na używanie telekomunikacyjnych urządzeń końcowych', ['class' => 'control-label small'])}}</div>
                                     </div>
                                 </div>
