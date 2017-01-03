@@ -2,6 +2,10 @@ $(document).ready(function() {
     var form = $("form#contact-form");
     var status = $("#status");
     var status_text = $("#status p");
+    var imie_error_status = $("#imie_status");
+    var imie_error_status_text = imie_error_status.find('p');
+    var tel_error_status = $("#tel_status");
+    var tel_error_status_text = tel_error_status.find('p');
     var imie= $("form#contact-form [name='imie']");
     var nrtelefonu= $("form#contact-form [name='telefon']");
     var url = $("form#contact-form").attr("action");
@@ -88,15 +92,20 @@ $(document).ready(function() {
         {
             imie.removeClass("correct_input");
             imie.addClass("wrong_input");
+            var error_text = 'Imię jest nieprawidłowe';
+            imie_error_status.removeClass('hidden');
+            imie_error_status_text.html(error_text);
         }
         else
         {
             imie.addClass("correct_input");
             imie.removeClass("wrong_input");
+            imie_error_status.addClass('hidden');
         }
         if(imie.val().length==0) {
             imie.removeClass("wrong_input");
             imie.removeClass("correct_input");
+            imie_error_status.addClass('hidden');
         }
     });
 
@@ -105,15 +114,24 @@ $(document).ready(function() {
         {
             nrtelefonu.removeClass("correct_input");
             nrtelefonu.addClass("wrong_input");
+            var error_text = '';
+            if(!specialChars(nrtelefonu.val()))
+                error_text += 'Numer zawiera litery lub niedozwolone znaki';
+            if(error_text=='')
+                error_text = 'Nieprawidłowy format numeru';
+            tel_error_status.removeClass('hidden');
+            tel_error_status_text.html(error_text);
         }
         else
         {
             nrtelefonu.removeClass("wrong_input");
             nrtelefonu.addClass("correct_input");
+            tel_error_status.addClass('hidden');
         }
         if(nrtelefonu.val().length==0) {
             nrtelefonu.removeClass("wrong_input");
             nrtelefonu.removeClass("correct_input");
+            tel_error_status.addClass('hidden');
         }
     });
 });
@@ -138,4 +156,12 @@ function isTelephoneNumber(number) {
         isTrue = regex.test(number);
     }
     return regex.test(number);
+}
+
+function specialChars(input) {
+    var isTrue=false;
+    var regex = /^[0-9-|\s]*$/;
+    isTrue = regex.test(input);
+
+    return regex.test(input);
 }

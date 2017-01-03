@@ -14,7 +14,7 @@
                         <div class="col col-sm-12 col-xs-12">
                             <div class="tile tile-small slow">
                                 <div class="slide-badge promo">Wyróżnione</div>
-                                <a href=".contact-form" class="page-scroll slide-badge right">Formularz</a>
+                                <?php /*<a href=".contact-form" class="page-scroll slide-badge right">Formularz</a>*/ ?>
                                 <div class="carousel slide" data-ride="carousel">
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
@@ -42,7 +42,8 @@
                                                         <li><span class="greyed">gratis program do wystawiania faktur</span></li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn" href="http://abaco.net.pl/" target="_blank">Zobacz ofertę</a>
+                                                <a class="btn medium-btn form page-scroll" href=".contact-form">Formularz</a>
+                                                <a class="btn medium-btn offert" href="http://abaco.net.pl/" target="_blank">Zobacz ofertę</a>
                                             </div>
                                         </div>
 
@@ -61,7 +62,6 @@
                     <section>
                         <div class="col col-sm-6 col-xs-12">
                             <div class="tile tile-big">
-                                <a href=".contact-form" class="page-scroll slide-badge right">Formularz</a>
                                 <div class="carousel slide" data-ride="carousel">
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
@@ -83,7 +83,8 @@
                                                         <li>pomoc przy założeniu działalności</li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn" href="http://pomorskiebiurorachunkowe.pl/" target="_blank">Zobacz ofertę</a>
+                                                <a class="btn medium-btn form page-scroll" href=".contact-form">Formularz</a>
+                                                <a class="btn medium-btn offert" href="http://pomorskiebiurorachunkowe.pl/" target="_blank">Zobacz ofertę</a>
                                             </div>
                                         </div>
                                     </div>
@@ -94,7 +95,6 @@
 
                         <div class="col col-sm-6 col-xs-12">
                             <div class="tile tile-big">
-                                <a href=".contact-form" class="page-scroll slide-badge right">Formularz</a>
                                 <div class="carousel slide" data-ride="carousel">
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
@@ -117,7 +117,8 @@
                                                         <li>wsparcie pośrednika finansowego oraz BHP</li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn" href="http://www.xn--virtus-gdask-ddc.pl/" target="_blank">Zobacz ofertę</a>
+                                                <a class="btn medium-btn form page-scroll" href=".contact-form">Formularz</a>
+                                                <a class="btn medium-btn offert" href="http://www.xn--virtus-gdask-ddc.pl/" target="_blank">Zobacz ofertę</a>
                                             </div>
                                         </div>
                                         <div class="item">
@@ -137,7 +138,8 @@
                                                         <li>reprezentacja klienta podczas kontroli podatkowej</li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn" href="http://podgorska.net.pl/" target="_blank">Zobacz ofertę</a>
+                                                <a class="btn medium-btn form page-scroll" href=".contact-form">Formularz</a>
+                                                <a class="btn medium-btn offert" href="http://podgorska.net.pl/" target="_blank">Zobacz ofertę</a>
                                             </div>
                                         </div>
                                     </div>
@@ -163,11 +165,13 @@
                         <div class="padding-small">
                             {!! Form::open(['url' => url('form/1'), 'method' => 'post', 'id' => 'contact-form']) !!}
                             <div class="col-sm-10 center-block">
+                                <div id="imie_status" class="error-text hidden"><p>A</p></div>
                                 <a href="#" data-toggle="tooltip" data-placement="left"
                                    title="Wpisz poprawne imię">{{Form::text('imie', '', ['class' => "contact-form-field", 'placeholder' => 'Imię'])}}</a>
                             </div>
 
                             <div class="col-sm-10 center-block">
+                                <div id="tel_status" class="error-text hidden"><p>A</p></div>
                                 <a href="#" data-toggle="tooltip" data-placement="left"
                                    title="Wpisz poprawny numer telefonu (XXX-XXX-XXX)">{{Form::text('telefon', '', ['class' => "contact-form-field", 'placeholder' => 'Numer telefonu'])}}</a>
                             </div>

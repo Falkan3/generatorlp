@@ -93,7 +93,7 @@ body {
 }
 
 .tiles .tile .item {
-    height: 450px;
+    height: 475px;
 }
 
 #tile1 {
@@ -201,7 +201,7 @@ body {
 
 .tile.tile-big .tilecaption ul li:first-child {
     list-style: none;
-    margin: 10px 0;
+    margin: 18px 0;
 }
 
 img.widget {
@@ -377,7 +377,7 @@ span.text-bold
 
 .contact-form-field.wrong_input {
     border: 2px solid #880000;
-    background-color: #ffaca5;
+    /*background-color: #ffaca5;*/
 }
 
 .contact-form-field.wrong_input:focus {
@@ -387,7 +387,7 @@ span.text-bold
 
 .contact-form-field.correct_input {
     border: 2px solid #067200;
-    background-color: #a7ff89;
+    /*background-color: #a7ff89;*/
 }
 
 .contact-form-field.correct_input:focus {
@@ -408,7 +408,15 @@ span.text-bold
     font-style: italic;
 }
 
-a.btn {
+.tile a.btn.form {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: auto !important;
+    display: none;
+}
+
+.tile a.btn.offert {
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -550,6 +558,11 @@ img#loading_ajax {
     margin: 10px;
 }
 
+.error-text {
+    margin: 0;
+    color: #9f191f;
+}
+
 @media (max-width: 1200px) {
     .contact-form .btn {
         padding: 5px;
@@ -563,6 +576,10 @@ img#loading_ajax {
     }
 
     .tile .slide-badge.bottom, .tile .slide-badge.right  {
+        display: block;
+    }
+
+    .tile a.btn.form {
         display: block;
     }
 }
