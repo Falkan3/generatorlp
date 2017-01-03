@@ -47,6 +47,11 @@ span.highlight {
     font-weight: bold;
 }
 
+.tile.tile-big span.highlight {
+    font-size: 16px;
+    font-weight: bold;
+}
+
 span.highlight.big {
     font-size: 32px;
 }
@@ -189,6 +194,16 @@ body {
     list-style: square;
 }
 
+.tile.tile-small .tilecaption ul li:first-child {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.tile.tile-big .tilecaption ul li:first-child {
+    list-style: none;
+    margin: 10px 0;
+}
+
 img.widget {
     height: 110px;
     position: absolute;
@@ -223,10 +238,12 @@ img.widget {
 .tile .slide-badge, .tile-description .slide-badge {
     position: absolute;
     padding: 5px 25px;
-    background-color: #ff9c00;
+    /*background-color: #ff9c00;*/
+    background-color: #ff000a;;
     top: -4px;
     z-index: 1;
     left: -5px;
+    font-weight: bold;
 }
 
 .tile .slide-badge.promo::before {
@@ -237,9 +254,15 @@ img.widget {
     width: 0;
     height: 0;
     z-index: -1;
-    border: 5px solid #cb7900;
+    /*border: 5px solid #cb7900;*/
+    border: 5px solid #a8000a;
     border-bottom-color: transparent;
     border-left-color: transparent;
+}
+
+.tile .slide-badge.promo {
+    padding: 10px 35px;
+    color: #fff;
 }
 
 .tile .slide-badge.right::before {
@@ -410,6 +433,28 @@ a.btn {
     color: #3a3a38;
 }
 
+.tile .btn, .tile a.btn {
+    display: block;
+    padding: 10px 30px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid #31708f;
+    border-radius: 0;
+    background-color: #31708f;
+    white-space: normal;
+    color: #fff;
+}
+
+.tile.tile-big .btn, .tile.tile-big a.btn {
+    padding: 5px 15px;
+}
+
+.tile .btn:hover, .tile a.btn:hover {
+    background-color: #fff;
+    color: #31708f;
+}
+
 .col-sm-1.center-block, .col-sm-10.center-block, .col-sm-11.center-block, .col-sm-12.center-block, .col-sm-2.center-block, .col-sm-3.center-block, .col-sm-4.center-block, .col-sm-5.center-block, .col-sm-6.center-block, .col-sm-7.center-block, .col-sm-8.center-block, .col-sm-9.center-block {
     float: none;
 }
@@ -440,7 +485,7 @@ div.b-overlay {
     height: 100%;
     width: 100%;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.3);
     z-index: 0;
     transition: all .3s ease-in-out;
 }

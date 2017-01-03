@@ -78,11 +78,12 @@
                                                 <div class="tilecaption">
                                                     <h3>Pomorskie Biuro Rachunkowe Sp. z o.o.</h3>
                                                     <ul>
-                                                        <li>30% zniżki przez pierwsze trzy m-ce</li>
+                                                        <li><span class="highlight">30% zniżki przez pierwsze trzy m-ce</span></li>
                                                         <li>odbiór dokumentów od klienta</li>
                                                         <li>pomoc przy założeniu działalności</li>
                                                     </ul>
                                                 </div>
+                                                <a class="btn medium-btn" href="http://pomorskiebiurorachunkowe.pl/">Zobacz ofertę</a>
                                             </div>
                                         </div>
                                     </div>
@@ -111,11 +112,12 @@
                                                 <div class="tilecaption">
                                                     <h3>Biuro Rachunkowe VIRTUS Monika Wojciechowska</h3>
                                                     <ul>
-                                                        <li>50% zniżki na usługi przez pierwsze 3 m-ce</li>
+                                                        <li><span class="highlight">50% zniżki na usługi przez pierwsze 3 m-ce</span></li>
                                                         <li>odbiór dokumentów od klienta</li>
                                                         <li>wsparcie pośrednika finansowego oraz BHP</li>
                                                     </ul>
                                                 </div>
+                                                <a class="btn medium-btn" href="http://www.xn--virtus-gdask-ddc.pl/">Zobacz ofertę</a>
                                             </div>
                                         </div>
                                         <div class="item">
@@ -129,12 +131,13 @@
                                                 <div class="tilecaption">
                                                     <h3>Anita Podgórska Biuro Rachunkowe</h3>
                                                     <ul>
-                                                        <li>20% zniżki przez pierwsze 3 m-ce</li>
+                                                        <li><span class="highlight">20% zniżki przez pierwsze 3 m-ce</span></li>
                                                         <li>odbiór dokumentów od klienta</li>
                                                         <li>doradztwo podatkowe</li>
                                                         <li>reprezentacja klienta podczas kontroli podatkowej</li>
                                                     </ul>
                                                 </div>
+                                                <a class="btn medium-btn" href="http://podgorska.net.pl/">Zobacz ofertę</a>
                                             </div>
                                         </div>
                                     </div>
@@ -166,7 +169,7 @@
 
                             <div class="col-sm-10 center-block">
                                 <a href="#" data-toggle="tooltip" data-placement="left"
-                                   title="Wpisz poprawny numer telefonu">{{Form::text('telefon', '', ['class' => "contact-form-field", 'placeholder' => 'Numer telefonu'])}}</a>
+                                   title="Wpisz poprawny numer telefonu (XXX-XXX-XXX)">{{Form::text('telefon', '', ['class' => "contact-form-field", 'placeholder' => 'Numer telefonu'])}}</a>
                             </div>
 
                             <div class="col-sm-10 center-block">
@@ -176,19 +179,19 @@
                             <div class="text-left padding-small">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-10 col-md-12 center-block">
-                                        <div class="col-xs-1">{{Form::checkbox('agree1', 'agree1')}}</div>
+                                        <div class="col-xs-1">{{Form::checkbox('agree1', 'agree1', 1)}}</div>
                                         <div class="col-xs-10">{{Form::label('agree1', 'Zgoda na gromadzenie i przetwarzanie danych osobowych', ['class' => 'control-label small'])}}</div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-10 col-md-12 center-block">
-                                        <div class="col-xs-1">{{Form::checkbox('agree2', 'agree1')}}</div>
+                                        <div class="col-xs-1">{{Form::checkbox('agree2', 'agree1', 1)}}</div>
                                         <div class="col-xs-10">{{Form::label('agree2', 'Zgoda na otrzymywanie informacji handlowych', ['class' => 'control-label small'])}}</div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-10 col-md-12 center-block">
-                                        <div class="col-xs-1">{{Form::checkbox('agree3', 'agree1')}}</div>
+                                        <div class="col-xs-1">{{Form::checkbox('agree3', 'agree1', 1)}}</div>
                                         <div class="col-xs-10">{{Form::label('agree3', 'Zgoda na używanie telekomunikacyjnych urządzeń końcowych', ['class' => 'control-label small'])}}</div>
                                     </div>
                                 </div>
