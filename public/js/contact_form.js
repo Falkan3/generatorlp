@@ -57,6 +57,10 @@ $(document).ready(function() {
                     //status.removeClass("alert-danger");
                     //status.addClass("alert-success");
                     $("input[type=text], textarea").val("");
+                    imie.removeClass("wrong_input");
+                    imie.removeClass("correct_input");
+                    nrtelefonu.removeClass("wrong_input");
+                    nrtelefonu.removeClass("correct_input");
                 }
                 else
                 {
