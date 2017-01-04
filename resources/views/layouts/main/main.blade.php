@@ -51,6 +51,7 @@
 <script>
     $.widget.bridge('uibutton', $.ui.button);
 </script>
+<script src="{{URL::asset('js/main/jquery.inputmask.bundle.js')}}"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="{{URL::asset('js/bootstrap/bootstrap.min.js')}}"></script>
 

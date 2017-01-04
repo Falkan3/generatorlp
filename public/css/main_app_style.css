@@ -34,8 +34,20 @@ header nav #logo {
     padding: 30px 15px;
 }
 
+.padding-vertical-small {
+    padding: 15px 0;
+}
+
+.padding-vertical-medium {
+    padding: 30px 0;
+}
+
 .no-margin {
     margin: 0;
+}
+
+.no-padding {
+    padding: 0;
 }
 
 .margin-bottom-medium {
@@ -603,7 +615,7 @@ img#loading_ajax {
     #contact-form > div.no-padding-desktop {
         padding: 0 0 5px 0;
     }
-    #contact-form > div.no-padding-desktop div {
+    #contact-form > div.no-padding-desktop input {
         padding: 1px 5px;
     }
 }
