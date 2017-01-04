@@ -425,7 +425,7 @@ span.text-bold
 
 .contact-form .btn, a.btn {
     display: block;
-    padding: 10px 30px;
+    padding: 10px 20px;
     width: 100%;
     font-size: 24px;
     font-weight: bold;
@@ -567,6 +567,10 @@ img#loading_ajax {
     .contact-form .btn {
         padding: 5px;
     }
+
+    .contact-form .btn {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -581,6 +585,10 @@ img#loading_ajax {
 
     .tile a.btn.form {
         display: block;
+    }
+
+    .contact-form .btn {
+        font-size: 24px;
     }
 }
 

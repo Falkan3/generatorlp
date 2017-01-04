@@ -9,7 +9,7 @@
             <div class="row text-center">
                 <h3 class="no-margin">NAJLEPSZE WYNEGOCJOWANE <span class="highlight">OFERTY PROMOCYJNE</span></h3>
                 <h3 class="no-margin margin-bottom-medium"><span class="highlight big colored">TRÓJMIEJSKICH RACHUNKOWOŚCI</span></h3>
-                <div class="col-xs-12 col-sm-12 col-md-8 tiles">
+                <div class="col-xs-12 col-sm-12 col-md-9 tiles">
                     <section>
                         <div class="col col-sm-12 col-xs-12">
                             <div class="tile tile-small slow">
@@ -155,7 +155,7 @@
 
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-4 contact-form">
+                <div class="col-xs-12 col-sm-12 col-md-3 contact-form">
                     <div>
                         <h1><span class="text-bold">Wypełnij formularz</span></h1>
                         <p>Zostaw numer telefonu
