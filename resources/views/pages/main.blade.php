@@ -8,7 +8,8 @@
         <div class="container dynamicTile">
             <div class="row text-center">
                 <h3 class="no-margin">NAJLEPSZE WYNEGOCJOWANE <span class="highlight">OFERTY PROMOCYJNE</span></h3>
-                <h3 class="no-margin margin-bottom-medium"><span class="highlight big colored">TRÓJMIEJSKICH RACHUNKOWOŚCI</span></h3>
+                <h3 class="no-margin margin-bottom-medium"><span class="highlight big colored">TRÓJMIEJSKICH RACHUNKOWOŚCI</span>
+                </h3>
                 <div class="col-xs-12 col-sm-12 col-md-9 tiles">
                     <section>
                         <div class="col col-sm-12 col-xs-12">
@@ -29,7 +30,7 @@
                                                 </div>
                                                 <div class="widget">
                                                     <img
-                                                         src="{{asset('images/np/mark1.png')}}"/>
+                                                            src="{{asset('images/np/mark1.png')}}"/>
                                                     <p>-50%</p>
                                                 </div>
                                             </div>
@@ -38,14 +39,23 @@
                                                 <div class="tilecaption">
                                                     <h3>Biuro Rachunkowe ABACO</h3>
                                                     <ul>
-                                                        <li><span class="highlight">50% zniżki na usługi rachunkowe</span></li>
-                                                        <li><span class="greyed">oferta dotyczy pierwszych 3-m/cy i dotyczy nowych firm, lub</span></li>
-                                                        <li><span class="greyed">50% na 1 m-c dla firm zmieniajacych biuro rachunkowe</span></li>
-                                                        <li><span class="greyed">24h/7 dostęp do dokumentów online</span></li>
-                                                        <li><span class="greyed">gratis program do wystawiania faktur</span></li>
+                                                        <li>
+                                                            <span class="highlight">50% zniżki na usługi rachunkowe</span>
+                                                        </li>
+                                                        <li><span class="greyed">oferta dotyczy pierwszych 3-m/cy i dotyczy nowych firm, lub</span>
+                                                        </li>
+                                                        <li><span class="greyed">50% na 1 m-c dla firm zmieniajacych biuro rachunkowe</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="greyed">24h/7 dostęp do dokumentów online</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="greyed">gratis program do wystawiania faktur</span>
+                                                        </li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn offert" href="http://abaco.net.pl/" target="_blank">Zobacz ofertę</a>
+                                                <a class="btn medium-btn offert" href="http://abaco.net.pl/"
+                                                   target="_blank">Zobacz ofertę</a>
                                             </div>
                                         </div>
 
@@ -85,12 +95,19 @@
                                                 <div class="tilecaption">
                                                     <h3>Pomorskie Biuro Rachunkowe Sp. z o.o.</h3>
                                                     <ul>
-                                                        <li><span class="highlight">30% zniżki przez pierwsze trzy m-ce</span></li>
-                                                        <li><span class="greyed">odbiór dokumentów od klienta</span></li>
-                                                        <li><span class="greyed">pomoc przy założeniu działalności</span></li>
+                                                        <li>
+                                                            <span class="highlight">30% zniżki przez pierwsze trzy m-ce</span>
+                                                        </li>
+                                                        <li><span class="greyed">odbiór dokumentów od klienta</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="greyed">pomoc przy założeniu działalności</span>
+                                                        </li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn offert" href="http://pomorskiebiurorachunkowe.pl/" target="_blank">Zobacz ofertę</a>
+                                                <a class="btn medium-btn offert"
+                                                   href="http://pomorskiebiurorachunkowe.pl/" target="_blank">Zobacz
+                                                    ofertę</a>
                                             </div>
                                         </div>
                                     </div>
@@ -118,12 +135,17 @@
                                                 <div class="tilecaption">
                                                     <h3>Biuro Rachunkowe VIRTUS Monika Wojciechowska</h3>
                                                     <ul>
-                                                        <li><span class="highlight">50% zniżki na usługi przez pierwsze 3 m-ce</span></li>
-                                                        <li><span class="greyed">odbiór dokumentów od klienta</span></li>
-                                                        <li><span class="greyed">wsparcie pośrednika finansowego oraz BHP</span></li>
+                                                        <li><span class="highlight">50% zniżki na usługi przez pierwsze 3 m-ce</span>
+                                                        </li>
+                                                        <li><span class="greyed">odbiór dokumentów od klienta</span>
+                                                        </li>
+                                                        <li><span class="greyed">wsparcie pośrednika finansowego oraz BHP</span>
+                                                        </li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn offert" href="http://www.xn--virtus-gdask-ddc.pl/" target="_blank">Zobacz ofertę</a>
+                                                <a class="btn medium-btn offert"
+                                                   href="http://www.xn--virtus-gdask-ddc.pl/" target="_blank">Zobacz
+                                                    ofertę</a>
                                             </div>
                                         </div>
                                         <div class="item">
@@ -137,13 +159,18 @@
                                                 <div class="tilecaption">
                                                     <h3>Anita Podgórska Biuro Rachunkowe</h3>
                                                     <ul>
-                                                        <li><span class="highlight">20% zniżki przez pierwsze 3 m-ce</span></li>
-                                                        <li><span class="greyed">odbiór dokumentów od klienta</span></li>
+                                                        <li>
+                                                            <span class="highlight">20% zniżki przez pierwsze 3 m-ce</span>
+                                                        </li>
+                                                        <li><span class="greyed">odbiór dokumentów od klienta</span>
+                                                        </li>
                                                         <li><span class="greyed">doradztwo podatkowe</span></li>
-                                                        <li><span class="greyed">reprezentacja klienta podczas kontroli podatkowej</span></li>
+                                                        <li><span class="greyed">reprezentacja klienta podczas kontroli podatkowej</span>
+                                                        </li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn offert" href="http://podgorska.net.pl/" target="_blank">Zobacz ofertę</a>
+                                                <a class="btn medium-btn offert" href="http://podgorska.net.pl/"
+                                                   target="_blank">Zobacz ofertę</a>
                                             </div>
                                         </div>
                                     </div>
@@ -168,14 +195,14 @@
 
                         <div class="padding-small">
                             {!! Form::open(['url' => url('form/1'), 'method' => 'post', 'id' => 'contact-form']) !!}
-                            <div class="col-sm-12 center-block">
-                                <div id="imie_status" class="error-text hidden"><p>A</p></div>
+                            <div class="col-sm-12 center-block no-padding-desktop">
+                                <div id="imie_status" class="error-text hidden no-margin text-left"><p>A</p></div>
                                 <a href="#" data-toggle="tooltip" data-placement="left"
                                    title="Wpisz poprawne imię">{{Form::text('imie', '', ['class' => "contact-form-field", 'placeholder' => 'Imię'])}}</a>
                             </div>
 
-                            <div class="col-sm-12 center-block">
-                                <div id="tel_status" class="error-text hidden"><p>A</p></div>
+                            <div class="col-sm-12 center-block no-padding-desktop">
+                                <div id="tel_status" class="error-text hidden no-margin text-left"><p>A</p></div>
                                 <a href="#" data-toggle="tooltip" data-placement="left"
                                    title="Wpisz poprawny numer telefonu (XXX-XXX-XXX)">{{Form::text('telefon', '', ['class' => "contact-form-field", 'placeholder' => 'Numer telefonu'])}}</a>
                             </div>
@@ -186,11 +213,11 @@
 
                             <div id="status" class="hidden"><p></p></div>
 
-                            <div class="col-sm-12 center-block">
+                            <div class="col-sm-12 center-block no-padding-desktop">
                                 {{Form::submit('SPRAWDŹ PROMOCJĘ', ['class' => "btn"])}}
                             </div>
 
-                            <div class="text-left padding-small">
+                            <div class="container-fluid text-left padding-small no-padding-desktop">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-10 col-md-12 center-block">
                                         <div class="col-xs-1">{{Form::checkbox('agree1', 1, 1)}}</div>
@@ -236,9 +263,10 @@
                 </div>
             </div>
 
+            <a href=".contact-form" class="page-scroll"><img src="{{asset('images/dist/form-icon.png')}}"
+                                                             class="form-icon" alt="formularz" /></a>
         </div>
     </div>
-    <a href=".contact-form" class="page-scroll"><img src="{{asset('images/dist/form-icon.png')}}" class="form-icon" /></a>
 @stop
 
 <?php /*

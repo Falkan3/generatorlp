@@ -117,11 +117,6 @@ $(document).ready(function () {
      });
      */
 
-    $.notify(
-        "Start",
-        {position: "b l", className: "info"}
-    );
-
     if ($(window).width() > 974) {
         window.setInterval(function () {
             if ($(window).width() > 974) {

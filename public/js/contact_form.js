@@ -10,6 +10,7 @@ $(document).ready(function() {
     var nrtelefonu= $("form#contact-form [name='telefon']");
     var url = $("form#contact-form").attr("action");
     var loading_gif = $("#loading_ajax");
+    var checkboxes = $("form#contact-form input[type='checkbox']");
 
     $(document)
         .ajaxStart(function () {
@@ -43,6 +44,7 @@ $(document).ready(function() {
             processData: false,
             success: function(data){
                 status_text.html("");
+                status.addClass("error-text");
                 for (var index in data.message){
                     // you can show both index and value to know how the array is indexed in javascript (but it should be the same way it was in the php script)
                     status_text.append("<p>" + data.message[index]+'</p>');
@@ -60,11 +62,13 @@ $(document).ready(function() {
 
                     //status.removeClass("alert-danger");
                     //status.addClass("alert-success");
-                    $("input[type=text], textarea").val("");
+                    imie.val("");
+                    nrtelefonu.val("");
                     imie.removeClass("wrong_input");
                     imie.removeClass("correct_input");
                     nrtelefonu.removeClass("wrong_input");
                     nrtelefonu.removeClass("correct_input");
+                    status.removeClass("error-text");
                 }
                 else
                 {
@@ -81,11 +85,14 @@ $(document).ready(function() {
                     // you can show both index and value to know how the array is indexed in javascript (but it should be the same way it was in the php script)
                     status_text.append("<p>" + data.message[index]+'</p>');
                 }
+                status.addClass("error-text");
                 status.removeClass("hidden");
             }
         });
 
     });
+
+    //Input fields
 
     imie.on("blur", function() {
         if(!isName(imie.val()))
@@ -134,6 +141,20 @@ $(document).ready(function() {
             tel_error_status.addClass('hidden');
         }
     });
+
+    //Checkboxes
+
+    checkboxes.change(function() {
+        if(!this.checked) {
+            $(this).parent().parent().find("label").addClass('error-text');
+        }
+        else
+        {
+            $(this).parent().parent().find("label").removeClass('error-text');
+        }
+    });
+
+    //
 });
 
 function isName(name) {

@@ -372,7 +372,7 @@ span.text-bold
     width: 100%;
     height: 50px;
     padding: 6px 12px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.42857143;
     color: #555;
@@ -542,6 +542,7 @@ div.b-overlay {
 
 .notifyjs-corner {
     bottom: 8% !important;
+    left: 3% !important;
 }
 
 .notifyjs-corner div {
@@ -557,7 +558,7 @@ div.b-overlay {
     background-image: url('../images/dist/bell.png') !important;
     background-size: 16px 16px !important;
     background-position: 5px 9px !important;
-    max-width: 300px;
+    max-width: 200px;
     font-size: 12px;
 }
 
@@ -566,13 +567,11 @@ div.b-overlay {
 }
 
 img#loading_ajax {
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 .error-text {
-    margin: 0;
     color: #9f191f;
-    text-align: left;
 }
 
 .form-icon {
@@ -581,8 +580,14 @@ img#loading_ajax {
     bottom: 10px;
     right: 10px;
     display: none;
-    width: 48px;
+    width: 8%;
+    min-width: 64px;
 }
+
+.no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
 
 @media (max-width: 1200px) {
     .contact-form .btn {
@@ -591,6 +596,15 @@ img#loading_ajax {
 
     .contact-form .btn {
         font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    #contact-form > div.no-padding-desktop {
+        padding: 0 0 5px 0;
+    }
+    #contact-form > div.no-padding-desktop div {
+        padding: 1px 5px;
     }
 }
 
@@ -668,9 +682,9 @@ img#loading_ajax {
     }
 
     .tile a.btn.offert {
-        width: 100%;
-        right: auto;
-        bottom: 0;
+        width: 90%;
+        right: 5%;
+        bottom: 10px;
     }
 }
 
