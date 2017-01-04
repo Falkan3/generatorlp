@@ -1,8 +1,8 @@
 var tiles;
 var tiles_sng;
 var tooltips;
-var index=0;
-var alertItems=["4 osoby oglądają właśnie oferty nieruchomości", "2min temu zostało dokonane zamówienie na usługi rachunkowe"];
+var index = 0;
+var alertItems = ["4 osoby oglądają właśnie oferty nieruchomości", "2min temu zostało dokonane zamówienie na usługi rachunkowe"];
 var contactForm = $('.contact-form');
 var contactFormDivs = $('.contact-form > div');
 
@@ -23,19 +23,19 @@ $(document).ready(function () {
         interval: 10000
     });
 
-    tile_items.each(function() {
+    tile_items.each(function () {
         $(this).attr('id', index++);
     });
     resizeTiles();
     if ($(window).width() > 974) {
         /*
-        $(".tile.tile-small").each(function (e) {
-            $(this).height($(this).width() / 2);
-        });
-        $(".tile.tile-big").each(function (e) {
-            $(this).height($(this).width());
-        });
-        */
+         $(".tile.tile-small").each(function (e) {
+         $(this).height($(this).width() / 2);
+         });
+         $(".tile.tile-big").each(function (e) {
+         $(this).height($(this).width());
+         });
+         */
         contactForm.css('min-height', tiles.height() - 30);
         contactFormDivs.css('min-height', tiles.height() - 30);
         tooltips.attr('data-placement', 'left');
@@ -69,15 +69,15 @@ $(document).ready(function () {
         resizeTiles();
         if ($(window).width() > 974) {
             /*
-            $(".tile.tile-small").each(function (e) {
-                $(this).height($(this).width() / 2);
-            });
-            //$(".carousel").height($("#tile1").width());
-            //$(".item").height($("#tile1").width());
-            $(".tile.tile-big").each(function (e) {
-                $(this).height($(this).width());
-            });
-            */
+             $(".tile.tile-small").each(function (e) {
+             $(this).height($(this).width() / 2);
+             });
+             //$(".carousel").height($("#tile1").width());
+             //$(".item").height($("#tile1").width());
+             $(".tile.tile-big").each(function (e) {
+             $(this).height($(this).width());
+             });
+             */
 
             contactForm.css('min-height', tiles.height() - 30);
             contactFormDivs.css('min-height', tiles.height() - 30);
@@ -94,48 +94,52 @@ $(document).ready(function () {
     //Click tile
     descs.hide();
     /*
-    tile_items.click(function(e) {
-        var desc = $(this).closest('section').find('.tile-description');
-        if(desc.css('display')=="none" || desc.attr('selected-tile')!=$(this).attr('id'))
-        {
-            desc.html($(this).html());
-            desc.find('.b-overlay').remove();
-            desc.find('.slide-badge').remove();
-            desc.slideDown();
-            var $anchor = desc;
-            $('html, body').stop().animate({
-                scrollTop: $anchor.offset().top-30
-            }, 1500, 'easeInOutExpo');
-            event.preventDefault();
-        }
-        else if(desc.attr('selected-tile')==$(this).attr('id'))
-        {
-            desc.slideUp();
-        }
-        desc.attr('selected-tile', $(this).attr('id'));
+     tile_items.click(function(e) {
+     var desc = $(this).closest('section').find('.tile-description');
+     if(desc.css('display')=="none" || desc.attr('selected-tile')!=$(this).attr('id'))
+     {
+     desc.html($(this).html());
+     desc.find('.b-overlay').remove();
+     desc.find('.slide-badge').remove();
+     desc.slideDown();
+     var $anchor = desc;
+     $('html, body').stop().animate({
+     scrollTop: $anchor.offset().top-30
+     }, 1500, 'easeInOutExpo');
+     event.preventDefault();
+     }
+     else if(desc.attr('selected-tile')==$(this).attr('id'))
+     {
+     desc.slideUp();
+     }
+     desc.attr('selected-tile', $(this).attr('id'));
 
-    });
-    */
+     });
+     */
 
     $.notify(
         "Start",
-        { position:"b l", className:"info" }
+        {position: "b l", className: "info"}
     );
 
-    window.setInterval(function(){
-        var item = alertItems[Math.floor(Math.random()*alertItems.length)];
-        $.notify(
-            item,
-            { position:"b l", className:"black", showDuration: 800, autoHideDelay: 7500, }
-        );
-    }, 20000);
+    if ($(window).width() > 974) {
+        window.setInterval(function () {
+            if ($(window).width() > 974) {
+                var item = alertItems[Math.floor(Math.random() * alertItems.length)];
+                $.notify(
+                    item,
+                    {position: "b l", className: "black", showDuration: 800, autoHideDelay: 7500,}
+                );
+            }
+        }, 20000);
+    }
 
 });
 
 function resizeTiles() {
     /*
-    tile_items.each(function(){
-        $(this).height(500);
-    });
-    */
+     tile_items.each(function(){
+     $(this).height(500);
+     });
+     */
 }

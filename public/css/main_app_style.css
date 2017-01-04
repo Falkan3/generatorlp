@@ -204,12 +204,23 @@ body {
     margin: 18px 0;
 }
 
-img.widget {
+div.widget {
     height: 110px;
     position: absolute;
-    right: 5%;
+    left: 5%;
     z-index: 1;
 }
+div.widget img {
+    height: 100%;
+}
+div.widget p {
+    position: absolute;
+    top: 15%;
+    left: 19%;
+    color: #fff;
+    font-size: 24px;
+}
+
 
 .tilecaption ul > li:not(:last-child) {
    /* margin-bottom: 5px;*/
@@ -420,7 +431,7 @@ span.text-bold
     position: absolute;
     bottom: 10px;
     right: 10px;
-    width: auto !important;
+    width: auto;
 }
 
 .contact-form .btn, a.btn {
@@ -447,9 +458,9 @@ span.text-bold
     width: 100%;
     font-size: 24px;
     font-weight: bold;
-    border: 1px solid #31708f;
+    border: 1px solid #ff9c00;
     border-radius: 0;
-    background-color: #31708f;
+    background-color: #ff9c00;
     white-space: normal;
     color: #fff;
 }
@@ -460,7 +471,7 @@ span.text-bold
 
 .tile .btn:hover, .tile a.btn:hover {
     background-color: #fff;
-    color: #31708f;
+    color: #ff9c00;
 }
 
 .col-sm-1.center-block, .col-sm-10.center-block, .col-sm-11.center-block, .col-sm-12.center-block, .col-sm-2.center-block, .col-sm-3.center-block, .col-sm-4.center-block, .col-sm-5.center-block, .col-sm-6.center-block, .col-sm-7.center-block, .col-sm-8.center-block, .col-sm-9.center-block {
@@ -561,6 +572,16 @@ img#loading_ajax {
 .error-text {
     margin: 0;
     color: #9f191f;
+    text-align: left;
+}
+
+.form-icon {
+    position: fixed;
+    z-index: 3;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    width: 48px;
 }
 
 @media (max-width: 1200px) {
@@ -589,6 +610,10 @@ img#loading_ajax {
 
     .contact-form .btn {
         font-size: 24px;
+    }
+
+    .form-icon {
+        display: block;
     }
 }
 
@@ -634,12 +659,18 @@ img#loading_ajax {
         padding: 50px 12% 0 12%;
     }
 
-    .tile.tile-big .tilecaption {
+    .tile .widget img {
+        height: 80px;
+    }
+
+    .tile .widget p {
         font-size: 18px;
     }
 
-    .tile .widget {
-        display: none;
+    .tile a.btn.offert {
+        width: 100%;
+        right: auto;
+        bottom: 0;
     }
 }
 

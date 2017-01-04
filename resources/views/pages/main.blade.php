@@ -13,7 +13,7 @@
                     <section>
                         <div class="col col-sm-12 col-xs-12">
                             <div class="tile tile-small slow">
-                                <div class="slide-badge promo">Wyróżnione</div>
+                                <?php /*<div class="slide-badge promo">Wyróżnione</div>*/ ?>
                                 <?php /*<a href=".contact-form" class="page-scroll slide-badge right">Formularz</a>*/ ?>
                                 <div class="carousel slide" data-ride="carousel">
                                     <!-- Wrapper for slides -->
@@ -27,8 +27,11 @@
                                                          src="http://bosque-creative.pl/projekty/demo4/wp-content/uploads/2015/11/logo-www.png"/>
 
                                                 </div>
-                                                <img class="widget"
-                                                     src="{{asset('images/np/mark1.png')}}"/>
+                                                <div class="widget">
+                                                    <img
+                                                         src="{{asset('images/np/mark1.png')}}"/>
+                                                    <p>-50%</p>
+                                                </div>
                                             </div>
                                             <div class="tilecaption-box">
                                                 <div class="corner-ribbon top-left green shadow">-50%</div>
@@ -42,7 +45,6 @@
                                                         <li><span class="greyed">gratis program do wystawiania faktur</span></li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn form page-scroll" href=".contact-form">Formularz</a>
                                                 <a class="btn medium-btn offert" href="http://abaco.net.pl/" target="_blank">Zobacz ofertę</a>
                                             </div>
                                         </div>
@@ -73,17 +75,21 @@
                                                     <img class="slide-logo"
                                                          src="{{asset('user_photos/admin/Photos/8a334804169251031d227794d07f72ae.png')}}"/>
                                                 </div>
+                                                <div class="widget">
+                                                    <img
+                                                            src="{{asset('images/np/mark1.png')}}"/>
+                                                    <p>-50%</p>
+                                                </div>
                                             </div>
                                             <div class="tilecaption-box">
                                                 <div class="tilecaption">
                                                     <h3>Pomorskie Biuro Rachunkowe Sp. z o.o.</h3>
                                                     <ul>
                                                         <li><span class="highlight">30% zniżki przez pierwsze trzy m-ce</span></li>
-                                                        <li>odbiór dokumentów od klienta</li>
-                                                        <li>pomoc przy założeniu działalności</li>
+                                                        <li><span class="greyed">odbiór dokumentów od klienta</span></li>
+                                                        <li><span class="greyed">pomoc przy założeniu działalności</span></li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn form page-scroll" href=".contact-form">Formularz</a>
                                                 <a class="btn medium-btn offert" href="http://pomorskiebiurorachunkowe.pl/" target="_blank">Zobacz ofertę</a>
                                             </div>
                                         </div>
@@ -113,11 +119,10 @@
                                                     <h3>Biuro Rachunkowe VIRTUS Monika Wojciechowska</h3>
                                                     <ul>
                                                         <li><span class="highlight">50% zniżki na usługi przez pierwsze 3 m-ce</span></li>
-                                                        <li>odbiór dokumentów od klienta</li>
-                                                        <li>wsparcie pośrednika finansowego oraz BHP</li>
+                                                        <li><span class="greyed">odbiór dokumentów od klienta</span></li>
+                                                        <li><span class="greyed">wsparcie pośrednika finansowego oraz BHP</span></li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn form page-scroll" href=".contact-form">Formularz</a>
                                                 <a class="btn medium-btn offert" href="http://www.xn--virtus-gdask-ddc.pl/" target="_blank">Zobacz ofertę</a>
                                             </div>
                                         </div>
@@ -133,12 +138,11 @@
                                                     <h3>Anita Podgórska Biuro Rachunkowe</h3>
                                                     <ul>
                                                         <li><span class="highlight">20% zniżki przez pierwsze 3 m-ce</span></li>
-                                                        <li>odbiór dokumentów od klienta</li>
-                                                        <li>doradztwo podatkowe</li>
-                                                        <li>reprezentacja klienta podczas kontroli podatkowej</li>
+                                                        <li><span class="greyed">odbiór dokumentów od klienta</span></li>
+                                                        <li><span class="greyed">doradztwo podatkowe</span></li>
+                                                        <li><span class="greyed">reprezentacja klienta podczas kontroli podatkowej</span></li>
                                                     </ul>
                                                 </div>
-                                                <a class="btn medium-btn form page-scroll" href=".contact-form">Formularz</a>
                                                 <a class="btn medium-btn offert" href="http://podgorska.net.pl/" target="_blank">Zobacz ofertę</a>
                                             </div>
                                         </div>
@@ -164,13 +168,13 @@
 
                         <div class="padding-small">
                             {!! Form::open(['url' => url('form/1'), 'method' => 'post', 'id' => 'contact-form']) !!}
-                            <div class="col-sm-10 center-block">
+                            <div class="col-sm-12 center-block">
                                 <div id="imie_status" class="error-text hidden"><p>A</p></div>
                                 <a href="#" data-toggle="tooltip" data-placement="left"
                                    title="Wpisz poprawne imię">{{Form::text('imie', '', ['class' => "contact-form-field", 'placeholder' => 'Imię'])}}</a>
                             </div>
 
-                            <div class="col-sm-10 center-block">
+                            <div class="col-sm-12 center-block">
                                 <div id="tel_status" class="error-text hidden"><p>A</p></div>
                                 <a href="#" data-toggle="tooltip" data-placement="left"
                                    title="Wpisz poprawny numer telefonu (XXX-XXX-XXX)">{{Form::text('telefon', '', ['class' => "contact-form-field", 'placeholder' => 'Numer telefonu'])}}</a>
@@ -182,7 +186,7 @@
 
                             <div id="status" class="hidden"><p></p></div>
 
-                            <div class="col-sm-10 center-block">
+                            <div class="col-sm-12 center-block">
                                 {{Form::submit('SPRAWDŹ PROMOCJĘ', ['class' => "btn"])}}
                             </div>
 
@@ -234,6 +238,7 @@
 
         </div>
     </div>
+    <a href=".contact-form" class="page-scroll"><img src="{{asset('images/dist/form-icon.png')}}" class="form-icon" /></a>
 @stop
 
 <?php /*
